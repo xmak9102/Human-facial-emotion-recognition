@@ -1,0 +1,1 @@
+{"train_loss_iter": 0.2589558959007263, "epoch": 0, "trainer/global_step": 1499, "_timestamp": 1654179259, "_runtime": 22, "_step": 30, "val_loss_iter": 0.3717655539512634, "_wandb": {"runtime": 21}}

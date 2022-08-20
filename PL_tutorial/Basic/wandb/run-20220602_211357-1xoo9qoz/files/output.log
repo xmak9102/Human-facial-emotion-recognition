@@ -1,0 +1,46 @@
+data and label torch.Size([1, 28, 28]) 7
+Epoch 0:   5%|█▏                     | 101/1875 [00:01<00:24, 71.66it/s, loss=0.412, v_num=9qoz]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type  | Params
+--------------------------------
+0 | model | Model | 7.9 K
+--------------------------------
+7.9 K     Trainable params
+0         Non-trainable params
+7.9 K     Total params
+
+
+
+
+
+
+Epoch 0:  83%|█████████████████▍   | 1562/1875 [00:15<00:03, 100.66it/s, loss=0.351, v_num=9qoz]
+
+Validation DataLoader 0:  91%|████████████████████████████   | 340/375 [00:02<00:00, 139.71it/s]
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 107, in <module>
+    trainer.fit(model, train_loader, dev_loader)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 768, in fit
+    self._call_and_handle_interrupt(
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 809, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1234, in _run
+    results = self._run_stage()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1321, in _run_stage
+    return self._run_train()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1351, in _run_train
+    self.fit_loop.run()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 205, in run
+    self.on_advance_end()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py", line 284, in on_advance_end
+    epoch_end_outputs = self.trainer._call_lightning_module_hook("training_epoch_end", epoch_end_outputs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1593, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 77, in training_epoch_end
+    all_preds = torch.stack(train_step_outputs, dim=0)
+

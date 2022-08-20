@@ -1,0 +1,5 @@
+
+data and label torch.Size([1, 28, 28]) 5
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 103, in <module>
+    trainer = pl.Trainer(gpus=1 if torch.cuda.is_available() else 0, max_epochs=10, default_root_dir='./checkpoint_saving', callbacks=scallbacks,  profiler='simple', logger=wandb_logger)

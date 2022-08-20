@@ -1,0 +1,7 @@
+
+data and label torch.Size([1, 28, 28]) 7
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 134, in <module>
+    trainer = pl.Trainer(gpus=1 if torch.cuda.is_available() else 0, max_epochs=1, default_root_dir='./checkpoint_saving',  profiler='simple', logger=wandb_logger, callback=[ImageCallBack(dev_loader)])
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)

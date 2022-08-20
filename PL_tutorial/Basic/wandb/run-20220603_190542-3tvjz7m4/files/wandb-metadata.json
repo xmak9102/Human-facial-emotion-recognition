@@ -1,0 +1,16 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-06-03T12:05:44.082801",
+    "startedAt": "2022-06-03T12:05:42.534287",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py",
+    "codePath": "logger.py",
+    "host": "DESKTOP-L55QTJ7",
+    "username": "xps",
+    "executable": "/home/xps/anaconda3/envs/deeplearning/bin/python"
+}

@@ -1,0 +1,379 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type  | Params
+--------------------------------
+0 | model | Model | 7.9 K
+--------------------------------
+7.9 K     Trainable params
+0         Non-trainable params
+7.9 K     Total params
+0.031     Total estimated model params size (MB)
+data and label torch.Size([1, 28, 28]) 9
+
+
+
+
+
+
+Epoch 0:  95%|██████████████▎| 1782/1875 [00:15<00:00, 113.71it/s, loss=0.266, v_num=bo5z]
+
+
+
+
+
+
+
+Epoch 1:  85%|████████████▋  | 1591/1875 [00:15<00:02, 102.75it/s, loss=0.257, v_num=bo5z]
+
+
+
+
+
+
+
+Epoch 2:  80%|████████████   | 1503/1875 [00:13<00:03, 110.77it/s, loss=0.254, v_num=bo5z]
+
+Validation DataLoader 0:  79%|███████████████████▋     | 295/375 [00:02<00:00, 142.41it/s]
+FIT Profiler Report
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Action                                                                                                                                                                                                    	|  Mean duration (s)	|  Num calls      	|  Total time (s) 	|  Percentage %   	|
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Total                                                                                                                                                                                                     	|  -              	|  200563         	|  50.436         	|  100 %          	|
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  run_training_epoch                                                                                                                                                                                        	|  16.77          	|  3              	|  50.311         	|  99.752         	|
+|  run_training_batch                                                                                                                                                                                        	|  0.0021802      	|  4500           	|  9.8108         	|  19.452         	|
+|  [LightningModule]PL_module.optimizer_step                                                                                                                                                                 	|  0.0019087      	|  4500           	|  8.589          	|  17.029         	|
+|  on_train_batch_end                                                                                                                                                                                        	|  0.0010304      	|  4500           	|  4.6366         	|  9.1931         	|
+|  [Strategy]SingleDeviceStrategy.training_step                                                                                                                                                              	|  0.0006121      	|  4500           	|  2.7544         	|  5.4613         	|
+|  [Strategy]SingleDeviceStrategy.backward                                                                                                                                                                   	|  0.00042809     	|  4500           	|  1.9264         	|  3.8195         	|
+|  [Callback]TQDMProgressBar.on_validation_batch_end                                                                                                                                                         	|  0.00071778     	|  1127           	|  0.80894        	|  1.6039         	|
+|  on_train_batch_start                                                                                                                                                                                      	|  0.00016951     	|  4500           	|  0.76277        	|  1.5124         	|
+|  [Strategy]SingleDeviceStrategy.validation_step                                                                                                                                                            	|  0.00056018     	|  1127           	|  0.63132        	|  1.2517         	|
+|  [LightningModule]PL_module.optimizer_zero_grad                                                                                                                                                            	|  7.0713e-05     	|  4500           	|  0.31821        	|  0.63091        	|
+|  [Strategy]SingleDeviceStrategy.batch_to_device                                                                                                                                                            	|  4.3158e-05     	|  5627           	|  0.24285        	|  0.4815         	|
+|  [Callback]TQDMProgressBar.on_after_backward                                                                                                                                                               	|  5.3586e-06     	|  4500           	|  0.024113       	|  0.04781        	|
+|  [Callback]TQDMProgressBar.on_before_zero_grad                                                                                                                                                             	|  5.1631e-06     	|  4500           	|  0.023234       	|  0.046066       	|
+|  [Callback]TQDMProgressBar.on_batch_start                                                                                                                                                                  	|  4.9887e-06     	|  4500           	|  0.022449       	|  0.04451        	|
+|  [Callback]TQDMProgressBar.on_batch_end                                                                                                                                                                    	|  4.7983e-06     	|  4500           	|  0.021592       	|  0.042811       	|
+|  [Callback]TQDMProgressBar.on_before_backward                                                                                                                                                              	|  4.0711e-06     	|  4500           	|  0.01832        	|  0.036323       	|
+|  [Callback]TQDMProgressBar.on_before_optimizer_step                                                                                                                                                        	|  3.8347e-06     	|  4500           	|  0.017256       	|  0.034214       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_batch_end                       	|  3.834e-06      	|  4500           	|  0.017253       	|  0.034208       	|
+|  [Callback]ModelSummary.on_batch_start                                                                                                                                                                     	|  3.5438e-06     	|  4500           	|  0.015947       	|  0.031619       	|
+|  [Callback]ModelSummary.on_batch_end                                                                                                                                                                       	|  3.5314e-06     	|  4500           	|  0.015891       	|  0.031508       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_before_zero_grad                	|  3.5252e-06     	|  4500           	|  0.015863       	|  0.031452       	|
+|  [Callback]ModelSummary.on_after_backward                                                                                                                                                                  	|  3.5142e-06     	|  4500           	|  0.015814       	|  0.031354       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_batch_start                     	|  3.4797e-06     	|  4500           	|  0.015659       	|  0.031047       	|
+|  [Callback]ModelSummary.on_before_zero_grad                                                                                                                                                                	|  3.4684e-06     	|  4500           	|  0.015608       	|  0.030946       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_before_backward                 	|  3.4161e-06     	|  4500           	|  0.015373       	|  0.030479       	|
+|  [Callback]GradientAccumulationScheduler.on_batch_end                                                                                                                                                      	|  3.3606e-06     	|  4500           	|  0.015123       	|  0.029984       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_after_backward                  	|  3.2782e-06     	|  4500           	|  0.014752       	|  0.029249       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_before_optimizer_step           	|  3.2382e-06     	|  4500           	|  0.014572       	|  0.028892       	|
+|  [Callback]GradientAccumulationScheduler.on_before_zero_grad                                                                                                                                               	|  3.2308e-06     	|  4500           	|  0.014538       	|  0.028825       	|
+|  [Callback]ModelSummary.on_before_backward                                                                                                                                                                 	|  3.2221e-06     	|  4500           	|  0.0145         	|  0.028748       	|
+|  [Callback]GradientAccumulationScheduler.on_after_backward                                                                                                                                                 	|  3.1684e-06     	|  4500           	|  0.014258       	|  0.028269       	|
+|  [Callback]ModelSummary.on_before_optimizer_step                                                                                                                                                           	|  3.1468e-06     	|  4500           	|  0.014161       	|  0.028076       	|
+|  [Callback]GradientAccumulationScheduler.on_before_backward                                                                                                                                                	|  3.1163e-06     	|  4500           	|  0.014023       	|  0.027804       	|
+|  [Callback]GradientAccumulationScheduler.on_before_optimizer_step                                                                                                                                          	|  3.0742e-06     	|  4500           	|  0.013834       	|  0.027429       	|
+|  [Callback]GradientAccumulationScheduler.on_batch_start                                                                                                                                                    	|  3.036e-06      	|  4500           	|  0.013662       	|  0.027088       	|
+|  [Callback]ModelSummary.on_validation_batch_end                                                                                                                                                            	|  1.184e-05      	|  1127           	|  0.013344       	|  0.026457       	|
+|  [LightningModule]PL_module.on_before_zero_grad                                                                                                                                                            	|  2.4652e-06     	|  4500           	|  0.011093       	|  0.021995       	|
+|  [Callback]TQDMProgressBar.on_validation_batch_start                                                                                                                                                       	|  9.198e-06      	|  1127           	|  0.010366       	|  0.020553       	|
+|  [LightningModule]PL_module.on_train_batch_end                                                                                                                                                             	|  2.2677e-06     	|  4500           	|  0.010205       	|  0.020233       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_train_epoch_end                 	|  0.003305       	|  3              	|  0.0099149      	|  0.019658       	|
+|  [LightningModule]PL_module.training_step_end                                                                                                                                                              	|  2.1225e-06     	|  4500           	|  0.0095513      	|  0.018937       	|
+|  [LightningModule]PL_module.on_train_batch_start                                                                                                                                                           	|  1.9457e-06     	|  4500           	|  0.0087557      	|  0.01736        	|
+|  [LightningModule]PL_module.on_after_backward                                                                                                                                                              	|  1.5216e-06     	|  4500           	|  0.0068471      	|  0.013576       	|
+|  [Strategy]SingleDeviceStrategy.training_step_end                                                                                                                                                          	|  1.5198e-06     	|  4500           	|  0.0068393      	|  0.01356        	|
+|  [LightningModule]PL_module.on_before_backward                                                                                                                                                             	|  1.4903e-06     	|  4500           	|  0.0067064      	|  0.013297       	|
+|  [Strategy]SingleDeviceStrategy.on_train_batch_start                                                                                                                                                       	|  1.4828e-06     	|  4500           	|  0.0066726      	|  0.01323        	|
+|  [LightningModule]PL_module.training_epoch_end                                                                                                                                                             	|  0.0020954      	|  3              	|  0.0062861      	|  0.012464       	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_validation_batch_end            	|  5.1748e-06     	|  1127           	|  0.005832       	|  0.011563       	|
+|  [Callback]GradientAccumulationScheduler.on_validation_batch_end                                                                                                                                           	|  4.8338e-06     	|  1127           	|  0.0054477      	|  0.010801       	|
+|  [LightningModule]PL_module.on_before_optimizer_step                                                                                                                                                       	|  1.1195e-06     	|  4500           	|  0.0050377      	|  0.0099883      	|
+|  [Callback]ModelSummary.on_validation_batch_start                                                                                                                                                          	|  3.9774e-06     	|  1127           	|  0.0044825      	|  0.0088875      	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_validation_batch_start          	|  3.7563e-06     	|  1127           	|  0.0042334      	|  0.0083936      	|
+|  [Callback]GradientAccumulationScheduler.on_validation_batch_start                                                                                                                                         	|  3.4328e-06     	|  1127           	|  0.0038688      	|  0.0076707      	|
+|  [Callback]TQDMProgressBar.on_train_epoch_end                                                                                                                                                              	|  0.0012753      	|  3              	|  0.0038259      	|  0.0075856      	|
+|  [Callback]TQDMProgressBar.on_validation_end                                                                                                                                                               	|  0.0006641      	|  4              	|  0.0026564      	|  0.0052669      	|
+|  [LightningModule]PL_module.validation_step_end                                                                                                                                                            	|  2.2344e-06     	|  1127           	|  0.0025182      	|  0.0049929      	|
+|  [LightningModule]PL_module.on_validation_batch_end                                                                                                                                                        	|  2.1516e-06     	|  1127           	|  0.0024248      	|  0.0048077      	|
+|  [LightningModule]PL_module.on_validation_batch_start                                                                                                                                                      	|  1.7382e-06     	|  1127           	|  0.001959       	|  0.0038841      	|
+|  [Callback]TQDMProgressBar.on_validation_start                                                                                                                                                             	|  0.00046317     	|  4              	|  0.0018527      	|  0.0036734      	|
+|  [Callback]TQDMProgressBar.on_sanity_check_start                                                                                                                                                           	|  0.0017192      	|  1              	|  0.0017192      	|  0.0034087      	|
+|  [Strategy]SingleDeviceStrategy.validation_step_end                                                                                                                                                        	|  1.4583e-06     	|  1127           	|  0.0016435      	|  0.0032586      	|
+|  [Callback]TQDMProgressBar.on_train_epoch_start                                                                                                                                                            	|  0.00053047     	|  3              	|  0.0015914      	|  0.0031553      	|
+|  [Callback]ModelSummary.on_fit_start                                                                                                                                                                       	|  0.0004506      	|  1              	|  0.0004506      	|  0.00089341     	|
+|  [Callback]TQDMProgressBar.on_train_end                                                                                                                                                                    	|  0.0004186      	|  1              	|  0.0004186      	|  0.00082996     	|
+|  [Callback]TQDMProgressBar.on_train_start                                                                                                                                                                  	|  0.0003018      	|  1              	|  0.0003018      	|  0.00059838     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': None}.setup                              	|  0.0002638      	|  1              	|  0.0002638      	|  0.00052304     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_validation_end                  	|  4.725e-05      	|  4              	|  0.000189       	|  0.00037473     	|
+|  [LightningModule]PL_module.on_validation_model_eval                                                                                                                                                       	|  4.0075e-05     	|  4              	|  0.0001603      	|  0.00031783     	|
+|  [LightningModule]PL_module.on_validation_model_train                                                                                                                                                      	|  3.84e-05       	|  4              	|  0.0001536      	|  0.00030454     	|
+|  [LightningModule]PL_module.configure_optimizers                                                                                                                                                           	|  9.69e-05       	|  1              	|  9.69e-05       	|  0.00019212     	|
+|  [Callback]ModelSummary.on_validation_end                                                                                                                                                                  	|  1.6025e-05     	|  4              	|  6.41e-05       	|  0.00012709     	|
+|  [Callback]ModelSummary.on_validation_start                                                                                                                                                                	|  1.29e-05       	|  4              	|  5.16e-05       	|  0.00010231     	|
+|  [Callback]ModelSummary.on_train_epoch_end                                                                                                                                                                 	|  1.7067e-05     	|  3              	|  5.12e-05       	|  0.00010151     	|
+|  [Callback]TQDMProgressBar.teardown                                                                                                                                                                        	|  4.45e-05       	|  1              	|  4.45e-05       	|  8.8231e-05     	|
+|  [Callback]TQDMProgressBar.on_epoch_start                                                                                                                                                                  	|  4.8857e-06     	|  7              	|  3.42e-05       	|  6.7809e-05     	|
+|  [Callback]TQDMProgressBar.on_epoch_end                                                                                                                                                                    	|  4.5429e-06     	|  7              	|  3.18e-05       	|  6.305e-05      	|
+|  [Callback]ModelSummary.on_train_epoch_start                                                                                                                                                               	|  9.9333e-06     	|  3              	|  2.98e-05       	|  5.9085e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_train_epoch_start               	|  9.9e-06        	|  3              	|  2.97e-05       	|  5.8886e-05     	|
+|  [Callback]ModelSummary.on_epoch_end                                                                                                                                                                       	|  4.0286e-06     	|  7              	|  2.82e-05       	|  5.5912e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_train_epoch_start                                                                                                                                              	|  9.1e-06        	|  3              	|  2.73e-05       	|  5.4128e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_epoch_start                     	|  3.8429e-06     	|  7              	|  2.69e-05       	|  5.3335e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_epoch_end                       	|  3.7714e-06     	|  7              	|  2.64e-05       	|  5.2343e-05     	|
+|  [Callback]TQDMProgressBar.on_fit_end                                                                                                                                                                      	|  2.64e-05       	|  1              	|  2.64e-05       	|  5.2343e-05     	|
+|  [Callback]ModelSummary.on_epoch_start                                                                                                                                                                     	|  3.7571e-06     	|  7              	|  2.63e-05       	|  5.2145e-05     	|
+|  [Callback]TQDMProgressBar.on_validation_epoch_end                                                                                                                                                         	|  6.5e-06        	|  4              	|  2.6e-05        	|  5.155e-05      	|
+|  [Callback]GradientAccumulationScheduler.on_epoch_start                                                                                                                                                    	|  3.6143e-06     	|  7              	|  2.53e-05       	|  5.0163e-05     	|
+|  [Callback]ModelSummary.on_sanity_check_start                                                                                                                                                              	|  2.29e-05       	|  1              	|  2.29e-05       	|  4.5404e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_epoch_end                                                                                                                                                      	|  3.2e-06        	|  7              	|  2.24e-05       	|  4.4413e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_validation_end                                                                                                                                                 	|  5.375e-06      	|  4              	|  2.15e-05       	|  4.2628e-05     	|
+|  [Callback]TQDMProgressBar.on_save_checkpoint                                                                                                                                                              	|  6.2333e-06     	|  3              	|  1.87e-05       	|  3.7077e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_validation_start                                                                                                                                               	|  4.55e-06       	|  4              	|  1.82e-05       	|  3.6085e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_validation_start                	|  4.5e-06        	|  4              	|  1.8e-05        	|  3.5689e-05     	|
+|  [Callback]ModelSummary.on_validation_epoch_end                                                                                                                                                            	|  4.5e-06        	|  4              	|  1.8e-05        	|  3.5689e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_validation_epoch_end            	|  4.425e-06      	|  4              	|  1.77e-05       	|  3.5094e-05     	|
+|  [LightningModule]PL_module.on_validation_end                                                                                                                                                              	|  3.9e-06        	|  4              	|  1.56e-05       	|  3.093e-05      	|
+|  [Callback]TQDMProgressBar.on_validation_epoch_start                                                                                                                                                       	|  3.8e-06        	|  4              	|  1.52e-05       	|  3.0137e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_validation_epoch_end                                                                                                                                           	|  3.725e-06      	|  4              	|  1.49e-05       	|  2.9542e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_validation_epoch_start          	|  3.625e-06      	|  4              	|  1.45e-05       	|  2.8749e-05     	|
+|  [Callback]ModelSummary.on_validation_epoch_start                                                                                                                                                          	|  3.55e-06       	|  4              	|  1.42e-05       	|  2.8154e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_validation_epoch_start                                                                                                                                         	|  3.4e-06        	|  4              	|  1.36e-05       	|  2.6965e-05     	|
+|  [LightningModule]PL_module.on_epoch_end                                                                                                                                                                   	|  1.9e-06        	|  7              	|  1.33e-05       	|  2.637e-05      	|
+|  [Callback]ModelSummary.on_save_checkpoint                                                                                                                                                                 	|  4.0333e-06     	|  3              	|  1.21e-05       	|  2.3991e-05     	|
+|  [LightningModule]PL_module.validation_epoch_end                                                                                                                                                           	|  3e-06          	|  4              	|  1.2e-05        	|  2.3792e-05     	|
+|  [LightningModule]PL_module.on_epoch_start                                                                                                                                                                 	|  1.6143e-06     	|  7              	|  1.13e-05       	|  2.2405e-05     	|
+|  [Callback]TQDMProgressBar.setup                                                                                                                                                                           	|  1.11e-05       	|  1              	|  1.11e-05       	|  2.2008e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_train_epoch_end                                                                                                                                                	|  3.6e-06        	|  3              	|  1.08e-05       	|  2.1413e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_save_checkpoint                 	|  3.5e-06        	|  3              	|  1.05e-05       	|  2.0818e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_save_checkpoint                                                                                                                                                	|  3.4e-06        	|  3              	|  1.02e-05       	|  2.0224e-05     	|
+|  [Callback]ModelSummary.on_fit_end                                                                                                                                                                         	|  9.9e-06        	|  1              	|  9.9e-06        	|  1.9629e-05     	|
+|  [Callback]ModelSummary.on_train_start                                                                                                                                                                     	|  8.8e-06        	|  1              	|  8.8e-06        	|  1.7448e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_sanity_check_start              	|  8.8e-06        	|  1              	|  8.8e-06        	|  1.7448e-05     	|
+|  [Callback]TQDMProgressBar.on_sanity_check_end                                                                                                                                                             	|  8.7e-06        	|  1              	|  8.7e-06        	|  1.725e-05      	|
+|  [LightningModule]PL_module.configure_callbacks                                                                                                                                                            	|  8.6e-06        	|  1              	|  8.6e-06        	|  1.7051e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_fit_end                         	|  8.6e-06        	|  1              	|  8.6e-06        	|  1.7051e-05     	|
+|  [Callback]ModelSummary.on_train_end                                                                                                                                                                       	|  8.4e-06        	|  1              	|  8.4e-06        	|  1.6655e-05     	|
+|  [LightningModule]PL_module.setup                                                                                                                                                                          	|  7.7e-06        	|  1              	|  7.7e-06        	|  1.5267e-05     	|
+|  [LightningModule]PL_module.on_train_epoch_end                                                                                                                                                             	|  2.5667e-06     	|  3              	|  7.7e-06        	|  1.5267e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_fit_end                                                                                                                                                        	|  7.3e-06        	|  1              	|  7.3e-06        	|  1.4474e-05     	|
+|  [LightningModule]PL_module.on_validation_start                                                                                                                                                            	|  1.775e-06      	|  4              	|  7.1e-06        	|  1.4077e-05     	|
+|  [Strategy]SingleDeviceStrategy.on_validation_end                                                                                                                                                          	|  1.775e-06      	|  4              	|  7.1e-06        	|  1.4077e-05     	|
+|  [Callback]ModelSummary.teardown                                                                                                                                                                           	|  6.9e-06        	|  1              	|  6.9e-06        	|  1.3681e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_fit_start                                                                                                                                                      	|  6.7e-06        	|  1              	|  6.7e-06        	|  1.3284e-05     	|
+|  [Strategy]SingleDeviceStrategy.on_validation_start                                                                                                                                                        	|  1.675e-06      	|  4              	|  6.7e-06        	|  1.3284e-05     	|
+|  [LightningModule]PL_module.on_validation_epoch_end                                                                                                                                                        	|  1.625e-06      	|  4              	|  6.5e-06        	|  1.2888e-05     	|
+|  [LightningModule]PL_module.on_validation_epoch_start                                                                                                                                                      	|  1.425e-06      	|  4              	|  5.7e-06        	|  1.1301e-05     	|
+|  [LightningModule]PL_module.on_train_epoch_start                                                                                                                                                           	|  1.9e-06        	|  3              	|  5.7e-06        	|  1.1301e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_pretrain_routine_start                                                                                                                                         	|  5.5e-06        	|  1              	|  5.5e-06        	|  1.0905e-05     	|
+|  [Callback]TQDMProgressBar.on_pretrain_routine_start                                                                                                                                                       	|  5.2e-06        	|  1              	|  5.2e-06        	|  1.031e-05      	|
+|  [LightningModule]PL_module.on_save_checkpoint                                                                                                                                                             	|  1.7333e-06     	|  3              	|  5.2e-06        	|  1.031e-05      	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_train_start                     	|  5.1e-06        	|  1              	|  5.1e-06        	|  1.0112e-05     	|
+|  [Callback]GradientAccumulationScheduler.on_sanity_check_start                                                                                                                                             	|  5.1e-06        	|  1              	|  5.1e-06        	|  1.0112e-05     	|
+|  [Callback]GradientAccumulationScheduler.teardown                                                                                                                                                          	|  5.1e-06        	|  1              	|  5.1e-06        	|  1.0112e-05     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.teardown                           	|  5.1e-06        	|  1              	|  5.1e-06        	|  1.0112e-05     	|
+|  [Callback]ModelSummary.on_pretrain_routine_start                                                                                                                                                          	|  4.6e-06        	|  1              	|  4.6e-06        	|  9.1205e-06     	|
+|  [Callback]ModelSummary.on_sanity_check_end                                                                                                                                                                	|  4.3e-06        	|  1              	|  4.3e-06        	|  8.5256e-06     	|
+|  [Callback]GradientAccumulationScheduler.on_train_start                                                                                                                                                    	|  4.3e-06        	|  1              	|  4.3e-06        	|  8.5256e-06     	|
+|  [Callback]TQDMProgressBar.on_fit_start                                                                                                                                                                    	|  4e-06          	|  1              	|  4e-06          	|  7.9308e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_sanity_check_end                	|  4e-06          	|  1              	|  4e-06          	|  7.9308e-06     	|
+|  [Callback]TQDMProgressBar.on_before_accelerator_backend_setup                                                                                                                                             	|  3.6e-06        	|  1              	|  3.6e-06        	|  7.1377e-06     	|
+|  [LightningModule]PL_module.on_fit_start                                                                                                                                                                   	|  3.5e-06        	|  1              	|  3.5e-06        	|  6.9395e-06     	|
+|  [Callback]GradientAccumulationScheduler.on_sanity_check_end                                                                                                                                               	|  3.5e-06        	|  1              	|  3.5e-06        	|  6.9395e-06     	|
+|  [Callback]ModelSummary.setup                                                                                                                                                                              	|  3.4e-06        	|  1              	|  3.4e-06        	|  6.7412e-06     	|
+|  [Callback]TQDMProgressBar.on_configure_sharded_model                                                                                                                                                      	|  3.4e-06        	|  1              	|  3.4e-06        	|  6.7412e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': None}.on_before_accelerator_backend_setup	|  3.2e-06        	|  1              	|  3.2e-06        	|  6.3447e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_fit_start                       	|  3.2e-06        	|  1              	|  3.2e-06        	|  6.3447e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_pretrain_routine_start          	|  3.2e-06        	|  1              	|  3.2e-06        	|  6.3447e-06     	|
+|  [LightningModule]PL_module.on_train_dataloader                                                                                                                                                            	|  3.2e-06        	|  1              	|  3.2e-06        	|  6.3447e-06     	|
+|  [LightningModule]PL_module.on_fit_end                                                                                                                                                                     	|  3.2e-06        	|  1              	|  3.2e-06        	|  6.3447e-06     	|
+|  [Callback]GradientAccumulationScheduler.on_train_end                                                                                                                                                      	|  3e-06          	|  1              	|  3e-06          	|  5.9481e-06     	|
+|  [Callback]TQDMProgressBar.on_pretrain_routine_end                                                                                                                                                         	|  2.8e-06        	|  1              	|  2.8e-06        	|  5.5516e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_train_end                       	|  2.8e-06        	|  1              	|  2.8e-06        	|  5.5516e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_configure_sharded_model         	|  2.6e-06        	|  1              	|  2.6e-06        	|  5.155e-06      	|
+|  [Callback]GradientAccumulationScheduler.setup                                                                                                                                                             	|  2.5e-06        	|  1              	|  2.5e-06        	|  4.9568e-06     	|
+|  [Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None, 'save_on_train_epoch_end': True}.on_pretrain_routine_end            	|  2.5e-06        	|  1              	|  2.5e-06        	|  4.9568e-06     	|
+|  [LightningModule]PL_module.on_val_dataloader                                                                                                                                                              	|  2.4e-06        	|  1              	|  2.4e-06        	|  4.7585e-06     	|
+|  [LightningModule]PL_module.teardown                                                                                                                                                                       	|  2.4e-06        	|  1              	|  2.4e-06        	|  4.7585e-06     	|
+|  [Callback]ModelSummary.on_before_accelerator_backend_setup                                                                                                                                                	|  2.4e-06        	|  1              	|  2.4e-06        	|  4.7585e-06     	|
+|  [Callback]ModelSummary.on_configure_sharded_model                                                                                                                                                         	|  2.4e-06        	|  1              	|  2.4e-06        	|  4.7585e-06     	|
+|  [LightningModule]PL_module.prepare_data                                                                                                                                                                   	|  2.3e-06        	|  1              	|  2.3e-06        	|  4.5602e-06     	|
+|  [Callback]GradientAccumulationScheduler.on_before_accelerator_backend_setup                                                                                                                               	|  2.3e-06        	|  1              	|  2.3e-06        	|  4.5602e-06     	|
+|  [Callback]ModelSummary.on_pretrain_routine_end                                                                                                                                                            	|  2.3e-06        	|  1              	|  2.3e-06        	|  4.5602e-06     	|
+|  [Callback]GradientAccumulationScheduler.on_configure_sharded_model                                                                                                                                        	|  2.2e-06        	|  1              	|  2.2e-06        	|  4.362e-06      	|
+|  [LightningModule]PL_module.configure_sharded_model                                                                                                                                                        	|  2.1e-06        	|  1              	|  2.1e-06        	|  4.1637e-06     	|
+|  [Callback]GradientAccumulationScheduler.on_pretrain_routine_end                                                                                                                                           	|  2.1e-06        	|  1              	|  2.1e-06        	|  4.1637e-06     	|
+|  [LightningModule]PL_module.on_train_start                                                                                                                                                                 	|  2.1e-06        	|  1              	|  2.1e-06        	|  4.1637e-06     	|
+|  [Strategy]SingleDeviceStrategy.on_train_start                                                                                                                                                             	|  1.7e-06        	|  1              	|  1.7e-06        	|  3.3706e-06     	|
+|  [LightningModule]PL_module.on_train_end                                                                                                                                                                   	|  1.7e-06        	|  1              	|  1.7e-06        	|  3.3706e-06     	|
+|  [LightningModule]PL_module.on_pretrain_routine_start                                                                                                                                                      	|  1.5e-06        	|  1              	|  1.5e-06        	|  2.9741e-06     	|
+|  [LightningModule]PL_module.on_pretrain_routine_end                                                                                                                                                        	|  1e-06          	|  1              	|  1e-06          	|  1.9827e-06     	|
+|  [Strategy]SingleDeviceStrategy.on_train_end                                                                                                                                                               	|  1e-06          	|  1              	|  1e-06          	|  1.9827e-06     	|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Testing DataLoader 0:  53%|███████████████▏             | 164/312 [03:34<06:18,  2.56s/it]
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 112, in <module>
+    trainer.test(model, test_loader)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 936, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 983, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1234, in _run
+    results = self._run_stage()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1318, in _run_stage
+    return self._run_evaluate()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1363, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 154, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 127, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 220, in _evaluation_step
+    output = self.trainer._call_strategy_hook("test_step", *kwargs.values())
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1763, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 352, in test_step
+    return self.model.test_step(*args, **kwargs)
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 88, in test_step
+    plot = sns.heatmap(cf_matrix)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/seaborn/_decorators.py", line 46, in inner_f
+    return f(**kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/seaborn/matrix.py", line 553, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/seaborn/matrix.py", line 312, in plot
+    cb = ax.figure.colorbar(mesh, cax, ax, **self.cbar_kws)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/figure.py", line 1147, in colorbar
+    cax, kw = cbar.make_axes_gridspec(ax, **kw)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/colorbar.py", line 1569, in make_axes_gridspec
+    cax = fig.add_subplot(ss_cb, label="<colorbar>")
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/figure.py", line 772, in add_subplot
+    ax = subplot_class_factory(projection_class)(self, *args, **pkw)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/axes/_subplots.py", line 36, in __init__
+    self.set_subplotspec(SubplotSpec._from_subplot_args(fig, args))
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/axes/_subplots.py", line 61, in set_subplotspec
+    self._set_position(subplotspec.get_position(self.figure))
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/_api/deprecation.py", line 386, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/gridspec.py", line 677, in get_position
+    gridspec.get_grid_positions(figure)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/gridspec.py", line 176, in get_grid_positions
+    subplot_params = self.get_subplot_params(fig)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/gridspec.py", line 528, in get_subplot_params
+    return mpl.figure.SubplotParams(left=left, right=right,
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/figure.py", line 150, in __init__
+    self.update(left, bottom, right, top, wspace, hspace)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/matplotlib/figure.py", line 163, in update
+    raise ValueError('left cannot be >= right')
+

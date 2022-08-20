@@ -1,0 +1,32 @@
+[2022-06-11 23:26:36,855][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp6e0_vgss
+[2022-06-11 23:26:36,855][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp6e0_vgss/_remote_module_non_sriptable.py
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train_with_pl.py", line 194, in <module>
+    main( )
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/main.py", line 90, in decorated_main
+    _run_hydra(
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/_internal/utils.py", line 389, in _run_hydra
+    _run_app(
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/_internal/utils.py", line 452, in _run_app
+    run_and_report(
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/_internal/utils.py", line 216, in run_and_report
+    raise ex
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/_internal/utils.py", line 213, in run_and_report
+    return func()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/_internal/utils.py", line 453, in <lambda>
+    lambda: hydra.run(
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train_with_pl.py", line 182, in main
+    trainer = pl.Trainer(gpus=1 if torch.cuda.is_available() else 0, max_epochs=cfg.train.training.epochs, default_root_dir=ckp_dir, logger=wandb_logger, callbacks=[custom_callbacks])
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 558, in __init__
+    self._call_callback_hooks("on_init_start")
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1612, in _call_callback_hooks
+    fn = getattr(callback, hook_name)

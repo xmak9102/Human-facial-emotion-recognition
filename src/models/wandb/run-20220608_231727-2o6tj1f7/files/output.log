@@ -1,0 +1,216 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Epoch 0:   1%|▏                                         | 5/927 [00:00<01:05, 14.05it/s, loss=2.19, v_num=j1f7]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type | Params
+-------------------------------
+0 | model | VGG  | 139 M
+-------------------------------
+139 M     Trainable params
+0         Non-trainable params
+139 M     Total params
+558.396   Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:229: UserWarning: You called `self.log('dim:', ...)` in your `validation_step` but the value needs to be floating point. Converting it to torch.float32.
+  warning_cache.warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  84%|█████████████████████████████████▋      | 781/927 [00:40<00:07, 19.36it/s, loss=1.26, v_num=j1f7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  88%|███████████████████████████████████     | 813/927 [00:41<00:05, 19.78it/s, loss=1.08, v_num=j1f7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  88%|██████████████████████████████████▎    | 815/927 [00:41<00:05, 19.85it/s, loss=0.947, v_num=j1f7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  87%|██████████████████████████████████     | 811/927 [00:40<00:05, 19.82it/s, loss=0.897, v_num=j1f7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  90%|███████████████████████████████████    | 832/927 [00:41<00:04, 20.19it/s, loss=0.734, v_num=j1f7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  92%|████████████████████████████████████   | 856/927 [00:41<00:03, 20.52it/s, loss=0.678, v_num=j1f7]
+
+
+
+
+
+
+
+
+
+
+
+
+Testing DataLoader 0:   0%|                                                           | 0/7178 [00:00<?, ?it/s]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py:724: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py", line 154, in <module>
+    trainer.test(pl_module, test_dataloader)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 936, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 983, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1234, in _run
+    results = self._run_stage()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1318, in _run_stage
+    return self._run_evaluate()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1363, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 154, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 127, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 220, in _evaluation_step
+    output = self.trainer._call_strategy_hook("test_step", *kwargs.values())
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1763, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 352, in test_step
+    return self.model.test_step(*args, **kwargs)
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py", line 90, in test_step
+    pred = self.model(img.float()).reshape(10, -1)
+  File "/usr/local/lib/python3.9/dist-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/torchvision/models/vgg.py", line 69, in forward
+    x = self.classifier(x)
+  File "/usr/local/lib/python3.9/dist-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.9/dist-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)

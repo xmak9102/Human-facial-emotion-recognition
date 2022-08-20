@@ -1,0 +1,5 @@
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/src/models/train.py", line 84, in <module>
+    train_data = EmotionSet(os.path.join(PROCESSED_DIR, "train.ftr", mode=True))

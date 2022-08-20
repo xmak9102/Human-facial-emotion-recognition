@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/src/models/train.py", line 69, in <module>
+    pl_module = EmotionModule(input_dim=48**2, num_classes=7)
+  File "/home/xps/educate/code/hust/ML/src/models/train.py", line 37, in __init__
+    self.model = SimpleModel(input_dim=input_dim, num_classes=num_classes)

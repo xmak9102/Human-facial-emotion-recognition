@@ -1,0 +1,166 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████| 2/2 [00:00<00:00, 26.74it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.2 M
+---------------------------------
+11.2 M    Trainable params
+0         Non-trainable params
+11.2 M    Total params
+44.720    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:229: UserWarning: You called `self.log('dim:', ...)` in your `validation_step` but the value needs to be floating point. Converting it to torch.float32.
+
+Epoch 0:   9%|███▌                                     | 81/927 [00:01<00:18, 45.37it/s, loss=2.04, v_num=vygt]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+Epoch 0:  86%|██████████████████████████████████▍     | 798/927 [00:15<00:02, 50.94it/s, loss=1.71, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 1:  89%|███████████████████████████████████▋    | 828/927 [00:15<00:01, 51.95it/s, loss=1.59, v_num=vygt]
+
+
+
+
+
+
+
+Epoch 2:  80%|████████████████████████████████▉        | 744/927 [00:14<00:03, 50.25it/s, loss=1.5, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 3:  87%|██████████████████████████████████▋     | 803/927 [00:15<00:02, 52.22it/s, loss=1.42, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 4:  91%|████████████████████████████████████▍   | 844/927 [00:16<00:01, 52.60it/s, loss=1.42, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 5:  95%|█████████████████████████████████████▊  | 877/927 [00:16<00:00, 53.08it/s, loss=1.23, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 6:  97%|██████████████████████████████████████▌ | 895/927 [00:16<00:00, 52.74it/s, loss=1.16, v_num=vygt]
+
+
+
+
+
+
+
+Epoch 7:  81%|████████████████████████████████▎       | 750/927 [00:15<00:03, 49.66it/s, loss=1.07, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 8:  85%|█████████████████████████████████▊      | 784/927 [00:15<00:02, 50.98it/s, loss=1.04, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 9:  88%|██████████████████████████████████▎    | 816/927 [00:15<00:02, 51.52it/s, loss=0.911, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 10:  91%|██████████████████████████████████▋   | 846/927 [00:16<00:01, 52.32it/s, loss=0.924, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 11:  92%|██████████████████████████████████▉   | 852/927 [00:16<00:01, 51.75it/s, loss=0.849, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 12:  94%|███████████████████████████████████▌  | 867/927 [00:16<00:01, 52.14it/s, loss=0.674, v_num=vygt]
+
+
+
+
+
+
+
+
+Epoch 13:  97%|█████████████████████████████████████ | 903/927 [00:16<00:00, 53.54it/s, loss=0.574, v_num=vygt]
+Validation DataLoader 0:  87%|████████████████████████████████████████▉      | 161/185 [00:01<00:00, 83.08it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:229: UserWarning: You called `self.log('test accuracy: ', ...)` in your `test_step` but the value needs to be floating point. Converting it to torch.float32.
+
+
+
+
+
+
+
+
+
+
+Testing DataLoader 0: 100%|███████████████████████████████████████████████| 7178/7178 [00:19<00:00, 362.63it/s]
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     test accuracy:         0.5441626906394958

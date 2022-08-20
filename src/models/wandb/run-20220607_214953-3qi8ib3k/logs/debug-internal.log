@@ -1,0 +1,158 @@
+2022-06-07 21:49:53,326 INFO    StreamThr :28866 [internal.py:wandb_internal():90] W&B internal server running at pid: 28866, started at: 2022-06-07 21:49:53.326095
+2022-06-07 21:49:53,327 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: status
+2022-06-07 21:49:53,328 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: status
+2022-06-07 21:49:53,329 DEBUG   SenderThread:28866 [sender.py:send():232] send: header
+2022-06-07 21:49:53,329 INFO    WriterThread:28866 [datastore.py:open_for_write():75] open: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/run-3qi8ib3k.wandb
+2022-06-07 21:49:53,338 DEBUG   SenderThread:28866 [sender.py:send():232] send: run
+2022-06-07 21:49:53,340 INFO    SenderThread:28866 [sender.py:_maybe_setup_resume():489] checking resume status for None/lightning_tutorial/3qi8ib3k
+2022-06-07 21:49:53,931 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: check_version
+2022-06-07 21:49:53,931 INFO    SenderThread:28866 [dir_watcher.py:__init__():197] watching files in: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files
+2022-06-07 21:49:53,931 INFO    SenderThread:28866 [sender.py:_start_run_threads():811] run started: 3qi8ib3k with start time 1654613393
+2022-06-07 21:49:53,931 DEBUG   SenderThread:28866 [sender.py:send():232] send: summary
+2022-06-07 21:49:53,932 INFO    SenderThread:28866 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-07 21:49:53,932 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: check_version
+2022-06-07 21:49:54,132 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: run_start
+2022-06-07 21:49:54,136 DEBUG   HandlerThread:28866 [meta.py:__init__():35] meta init
+2022-06-07 21:49:54,136 DEBUG   HandlerThread:28866 [meta.py:__init__():49] meta init done
+2022-06-07 21:49:54,136 DEBUG   HandlerThread:28866 [meta.py:probe():209] probe
+2022-06-07 21:49:54,142 DEBUG   HandlerThread:28866 [meta.py:_setup_git():199] setup git
+2022-06-07 21:49:54,154 DEBUG   HandlerThread:28866 [meta.py:_setup_git():206] setup git done
+2022-06-07 21:49:54,155 DEBUG   HandlerThread:28866 [meta.py:_save_pip():53] save pip
+2022-06-07 21:49:54,155 DEBUG   HandlerThread:28866 [meta.py:_save_pip():67] save pip done
+2022-06-07 21:49:54,155 DEBUG   HandlerThread:28866 [meta.py:probe():247] probe done
+2022-06-07 21:49:54,191 DEBUG   SenderThread:28866 [sender.py:send():232] send: files
+2022-06-07 21:49:54,191 INFO    SenderThread:28866 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-07 21:49:54,195 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-07 21:49:54,195 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: stop_status
+2022-06-07 21:49:54,474 DEBUG   SenderThread:28866 [sender.py:send():232] send: telemetry
+2022-06-07 21:49:54,474 DEBUG   SenderThread:28866 [sender.py:send():232] send: metric
+2022-06-07 21:49:54,475 DEBUG   SenderThread:28866 [sender.py:send():232] send: telemetry
+2022-06-07 21:49:54,475 DEBUG   SenderThread:28866 [sender.py:send():232] send: metric
+2022-06-07 21:49:54,475 WARNING SenderThread:28866 [sender.py:send_metric():904] Seen metric with glob (shouldn't happen)
+2022-06-07 21:49:54,933 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_created():244] file/dir created: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/requirements.txt
+2022-06-07 21:49:54,933 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_created():244] file/dir created: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/output.log
+2022-06-07 21:49:54,934 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_created():244] file/dir created: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/wandb-metadata.json
+2022-06-07 21:49:54,934 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_created():244] file/dir created: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/wandb-summary.json
+2022-06-07 21:49:54,990 INFO    Thread-16 :28866 [upload_job.py:push():132] Uploaded file /tmp/tmprhmlspb_wandb/2nlmol7r-wandb-metadata.json
+2022-06-07 21:49:56,932 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_modified():257] file/dir modified: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/output.log
+2022-06-07 21:49:57,320 DEBUG   SenderThread:28866 [sender.py:send():232] send: config
+2022-06-07 21:49:57,423 DEBUG   SenderThread:28866 [sender.py:send():232] send: exit
+2022-06-07 21:49:57,424 INFO    SenderThread:28866 [sender.py:send_exit():368] handling exit code: 1
+2022-06-07 21:49:57,424 INFO    SenderThread:28866 [sender.py:send_exit():370] handling runtime: 3
+2022-06-07 21:49:57,424 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:57,424 INFO    SenderThread:28866 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-07 21:49:57,424 INFO    SenderThread:28866 [sender.py:send_exit():376] send defer
+2022-06-07 21:49:57,424 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:57,425 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:57,425 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-07 21:49:57,425 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:57,425 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-06-07 21:49:57,425 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 1
+2022-06-07 21:49:57,425 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:57,425 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-07 21:49:57,492 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:57,492 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-06-07 21:49:57,492 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 2
+2022-06-07 21:49:57,492 DEBUG   SenderThread:28866 [sender.py:send():232] send: stats
+2022-06-07 21:49:57,492 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:57,492 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-07 21:49:57,493 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:57,493 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-06-07 21:49:57,493 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 3
+2022-06-07 21:49:57,493 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:57,493 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-07 21:49:57,493 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:57,493 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-06-07 21:49:57,493 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 4
+2022-06-07 21:49:57,493 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:57,493 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-07 21:49:57,493 DEBUG   SenderThread:28866 [sender.py:send():232] send: summary
+2022-06-07 21:49:57,494 INFO    SenderThread:28866 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-07 21:49:57,494 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:57,494 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-06-07 21:49:57,494 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 5
+2022-06-07 21:49:57,494 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:57,494 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-07 21:49:57,494 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:57,494 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-06-07 21:49:57,526 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:57,932 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_modified():257] file/dir modified: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/wandb-summary.json
+2022-06-07 21:49:58,286 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 6
+2022-06-07 21:49:58,286 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:58,286 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:58,286 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-07 21:49:58,287 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:58,287 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-06-07 21:49:58,287 INFO    SenderThread:28866 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-07 21:49:58,387 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:58,933 INFO    Thread-12 :28866 [dir_watcher.py:_on_file_modified():257] file/dir modified: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/config.yaml
+2022-06-07 21:49:58,933 INFO    SenderThread:28866 [dir_watcher.py:_on_file_modified():257] file/dir modified: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/output.log
+2022-06-07 21:49:58,933 INFO    SenderThread:28866 [dir_watcher.py:finish():342] scan: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files
+2022-06-07 21:49:58,933 INFO    SenderThread:28866 [dir_watcher.py:finish():356] scan save: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/config.yaml config.yaml
+2022-06-07 21:49:58,933 INFO    SenderThread:28866 [dir_watcher.py:finish():356] scan save: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/requirements.txt requirements.txt
+2022-06-07 21:49:58,935 INFO    SenderThread:28866 [dir_watcher.py:finish():356] scan save: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/wandb-metadata.json wandb-metadata.json
+2022-06-07 21:49:58,935 INFO    SenderThread:28866 [dir_watcher.py:finish():356] scan save: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/wandb-summary.json wandb-summary.json
+2022-06-07 21:49:58,937 INFO    SenderThread:28866 [dir_watcher.py:finish():356] scan save: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/output.log output.log
+2022-06-07 21:49:58,939 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 7
+2022-06-07 21:49:58,939 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:58,941 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:58,941 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-07 21:49:58,942 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:58,942 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-06-07 21:49:58,942 INFO    SenderThread:28866 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-07 21:49:59,042 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,042 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,143 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,143 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,244 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,244 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,345 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,345 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,446 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,446 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,547 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,547 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,639 INFO    Thread-20 :28866 [upload_job.py:push():132] Uploaded file /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/output.log
+2022-06-07 21:49:59,648 INFO    Thread-17 :28866 [upload_job.py:push():132] Uploaded file /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/config.yaml
+2022-06-07 21:49:59,649 INFO    Thread-18 :28866 [upload_job.py:push():132] Uploaded file /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/requirements.txt
+2022-06-07 21:49:59,650 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,650 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,700 INFO    Thread-19 :28866 [upload_job.py:push():132] Uploaded file /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/files/wandb-summary.json
+2022-06-07 21:49:59,750 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,751 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,851 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:49:59,852 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:49:59,900 INFO    Thread-11 :28866 [sender.py:transition_state():389] send defer: 8
+2022-06-07 21:49:59,900 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:49:59,900 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-07 21:49:59,901 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:49:59,901 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-06-07 21:49:59,952 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:50:00,126 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 9
+2022-06-07 21:50:00,126 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:50:00,126 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:50:00,126 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-07 21:50:00,126 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:50:00,127 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-06-07 21:50:00,127 INFO    SenderThread:28866 [sender.py:transition_state():389] send defer: 10
+2022-06-07 21:50:00,127 DEBUG   SenderThread:28866 [sender.py:send():232] send: final
+2022-06-07 21:50:00,127 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: defer
+2022-06-07 21:50:00,127 DEBUG   SenderThread:28866 [sender.py:send():232] send: footer
+2022-06-07 21:50:00,127 INFO    HandlerThread:28866 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-07 21:50:00,127 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: defer
+2022-06-07 21:50:00,127 INFO    SenderThread:28866 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-06-07 21:50:00,227 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-07 21:50:00,227 DEBUG   SenderThread:28866 [sender.py:send_request():246] send_request: poll_exit
+2022-06-07 21:50:00,227 INFO    SenderThread:28866 [file_pusher.py:join():150] waiting for file pusher
+2022-06-07 21:50:00,869 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-07 21:50:00,869 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-07 21:50:00,869 INFO    MainThread:28866 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-06-07 21:50:00,870 INFO    MainThread:28866 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-06-07 21:50:00,870 INFO    MainThread:28866 [wandb_run.py:_footer_sync_info():3060] logging synced files
+2022-06-07 21:50:00,870 DEBUG   HandlerThread:28866 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-07 21:50:00,870 INFO    HandlerThread:28866 [handler.py:finish():806] shutting down handler
+2022-06-07 21:50:01,127 INFO    WriterThread:28866 [datastore.py:close():279] close: /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_214953-3qi8ib3k/run-3qi8ib3k.wandb
+2022-06-07 21:50:01,768 INFO    SenderThread:28866 [sender.py:finish():1110] shutting down sender
+2022-06-07 21:50:01,768 INFO    SenderThread:28866 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-07 21:50:01,768 INFO    SenderThread:28866 [file_pusher.py:join():150] waiting for file pusher
+2022-06-07 21:50:01,872 INFO    MainThread:28866 [internal.py:handle_exit():80] Internal process exited

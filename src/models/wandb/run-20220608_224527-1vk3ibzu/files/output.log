@@ -1,0 +1,104 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████| 2/2 [00:00<00:00, 27.62it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.2 M
+---------------------------------
+11.2 M    Trainable params
+0         Non-trainable params
+11.2 M    Total params
+44.720    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:229: UserWarning: You called `self.log('dim:', ...)` in your `validation_step` but the value needs to be floating point. Converting it to torch.float32.
+
+Epoch 0:   9%|███▋                                     | 83/927 [00:01<00:18, 45.45it/s, loss=1.64, v_num=ibzu]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+Epoch 0:  87%|██████████████████████████████████▋     | 805/927 [00:15<00:02, 51.20it/s, loss=1.23, v_num=ibzu]
+
+
+
+
+
+
+
+
+Epoch 1:  92%|████████████████████████████████████▊   | 852/927 [00:16<00:01, 52.91it/s, loss=1.03, v_num=ibzu]
+
+
+
+
+
+
+
+
+Epoch 2:  97%|█████████████████████████████████████▋ | 896/927 [00:16<00:00, 53.76it/s, loss=0.846, v_num=ibzu]
+
+
+
+
+
+
+
+Epoch 3:  83%|████████████████████████████████▎      | 769/927 [00:15<00:03, 50.85it/s, loss=0.662, v_num=ibzu]
+
+
+
+
+
+
+
+
+Epoch 4:  88%|██████████████████████████████████▍    | 818/927 [00:15<00:02, 52.36it/s, loss=0.542, v_num=ibzu]
+
+
+
+
+
+
+
+
+Epoch 5:  93%|████████████████████████████████████   | 858/927 [00:16<00:01, 52.75it/s, loss=0.284, v_num=ibzu]
+
+
+
+
+
+
+
+Epoch 6:  83%|████████████████████████████████▍      | 772/927 [00:15<00:03, 50.96it/s, loss=0.243, v_num=ibzu]
+
+Validation DataLoader 0:  85%|████████████████████████████████████████▏      | 158/185 [00:01<00:00, 82.93it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:229: UserWarning: You called `self.log('test accuracy: ', ...)` in your `test_step` but the value needs to be floating point. Converting it to torch.float32.
+
+
+
+
+
+
+
+
+
+
+Testing DataLoader 0: 100%|███████████████████████████████████████████████| 7178/7178 [00:19<00:00, 361.42it/s]
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     test accuracy:          0.584006667137146

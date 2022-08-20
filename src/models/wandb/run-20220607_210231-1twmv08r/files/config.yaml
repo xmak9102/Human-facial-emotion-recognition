@@ -1,0 +1,72 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.17
+    framework: huggingface
+    huggingface_version: 4.19.2
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: 'train loss: '
+      5: 1
+      6:
+      - 1
+    - 1: 'train accuracy: '
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: 'val loss: '
+      5: 1
+      6:
+      - 1
+    - 1: 'val accuracy: '
+      5: 1
+      6:
+      - 1
+    python_version: 3.9.10
+    start_time: 1654610551
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      - 40
+      - 41
+      - 49
+      - 55
+      3:
+      - 7
+      - 23
+      4: 3.9.10
+      5: 0.12.17
+      6: 4.19.2
+      8:
+      - 2
+      - 5
+hidden_dim:
+  desc: null
+  value: 333
+input_dim:
+  desc: null
+  value: 2304
+lr:
+  desc: null
+  value: 0.001
+mode:
+  desc: null
+  value: other
+model:
+  desc: null
+  value: null
+num_classes:
+  desc: null
+  value: 7

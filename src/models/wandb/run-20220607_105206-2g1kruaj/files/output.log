@@ -1,0 +1,284 @@
+
+Epoch 0:   1%|▋                                                       | 13/1121 [00:00<00:32, 33.96it/s, loss=1.89, v_num=ruaj]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type        | Params
+--------------------------------------
+0 | model | SimpleModel | 783 K
+--------------------------------------
+783 K     Trainable params
+0         Non-trainable params
+783 K     Total params
+3.134     Total estimated model params size (MB)
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                not been set for this class (_ResultMetric). The property determines if `update` by
+                default needs access to the full metric state. If this is not the case, significant speedups can be
+                achieved and we recommend setting this to `False`.
+                We provide an checking function
+                `from torchmetrics.utilities import check_forward_no_full_state`
+                that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                default for now) or if `full_state_update=False` can be used safely.
+  warnings.warn(*args, **kwargs)
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  84%|███████████████████████████████████████████████         | 941/1121 [00:22<00:04, 41.16it/s, loss=1.7, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  82%|█████████████████████████████████████████████▎         | 923/1121 [00:22<00:04, 41.49it/s, loss=1.65, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  81%|████████████████████████████████████████████▌          | 908/1121 [00:22<00:05, 40.28it/s, loss=1.57, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  85%|██████████████████████████████████████████████▌        | 950/1121 [00:22<00:03, 42.90it/s, loss=1.57, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  80%|████████████████████████████████████████████           | 898/1121 [00:20<00:05, 42.98it/s, loss=1.54, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  85%|██████████████████████████████████████████████▋        | 951/1121 [00:26<00:04, 36.31it/s, loss=1.59, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  88%|████████████████████████████████████████████████▍      | 986/1121 [00:25<00:03, 38.05it/s, loss=1.55, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  86%|███████████████████████████████████████████████▎       | 964/1121 [00:23<00:03, 40.68it/s, loss=1.55, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 8:  84%|██████████████████████████████████████████████▍        | 947/1121 [00:23<00:04, 40.87it/s, loss=1.58, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 9:  82%|████████████████████████████████████████████▉          | 915/1121 [00:25<00:05, 35.66it/s, loss=1.56, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 10:  82%|████████████████████████████████████████████▍         | 922/1121 [00:23<00:05, 39.21it/s, loss=1.52, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 11:  82%|████████████████████████████████████████████▌         | 924/1121 [00:22<00:04, 40.97it/s, loss=1.47, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 12:  88%|███████████████████████████████████████████████▌      | 988/1121 [00:28<00:03, 34.88it/s, loss=1.53, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 13:  82%|████████████████████████████████████████████▏         | 918/1121 [00:22<00:05, 40.36it/s, loss=1.48, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 14:  86%|██████████████████████████████████████████████▍       | 963/1121 [00:22<00:03, 43.57it/s, loss=1.46, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 15:  85%|██████████████████████████████████████████████        | 956/1121 [00:23<00:04, 41.17it/s, loss=1.58, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 16:  81%|███████████████████████████████████████████▉          | 911/1121 [00:22<00:05, 40.99it/s, loss=1.43, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 17:  85%|██████████████████████████████████████████████▋        | 951/1121 [00:24<00:04, 38.99it/s, loss=1.5, v_num=ruaj]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 18:  50%|██████████████████████████▉                           | 560/1121 [00:18<00:18, 30.23it/s, loss=1.38, v_num=ruaj]
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py:726: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+

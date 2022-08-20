@@ -1,0 +1,1 @@
+{"train loss: ": 1.2628785371780396, "train accuracy: ": 0.625, "epoch": 8, "trainer/global_step": 8072, "_timestamp": 1654567069, "_runtime": 283, "_step": 169, "val loss: ": 1.5149201154708862, "val accuracy: ": 0.4354073703289032, "_wandb": {"runtime": 281}}

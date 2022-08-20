@@ -1,0 +1,142 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+Sanity Checking: 0it [00:00, ?it/s]
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Epoch 0:   4%|█▍                                      | 42/1121 [00:00<00:23, 45.03it/s, loss=1.98, v_num=bvpy]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+Epoch 0:  83%|████████████████████████████████▌      | 935/1121 [00:18<00:03, 49.46it/s, loss=1.21, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  92%|██████████████████████████████████▉   | 1032/1121 [00:19<00:01, 53.00it/s, loss=1.26, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+Epoch 2:  87%|█████████████████████████████████▉     | 975/1121 [00:18<00:02, 52.54it/s, loss=1.17, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+Epoch 3:  82%|████████████████████████████████       | 922/1121 [00:17<00:03, 51.48it/s, loss=1.01, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  92%|███████████████████████████████████   | 1034/1121 [00:19<00:01, 53.37it/s, loss=1.03, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+Epoch 5:  86%|████████████████████████████████▊     | 967/1121 [00:18<00:02, 51.97it/s, loss=0.875, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  95%|███████████████████████████████████▎ | 1070/1121 [00:19<00:00, 53.82it/s, loss=0.799, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+Epoch 7:  88%|█████████████████████████████████▎    | 981/1121 [00:18<00:02, 51.66it/s, loss=0.734, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+Epoch 8:  81%|███████████████████████████████▌       | 906/1121 [00:17<00:04, 50.50it/s, loss=0.61, v_num=bvpy]
+
+
+
+
+
+
+
+
+
+
+Epoch 9:  89%|█████████████████████████████████▋    | 993/1121 [00:19<00:02, 51.96it/s, loss=0.416, v_num=bvpy]
+
+Validation DataLoader 0: 100%|███████████████████████████████████████████████| 224/224 [00:02<00:00, 85.71it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `test_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+Testing DataLoader 0: 100%|██████████████████████████████████████████████████| 897/897 [00:10<00:00, 86.52it/s]
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     test accuracy:         0.8515537977218628
+       test loss:           0.4944767951965332

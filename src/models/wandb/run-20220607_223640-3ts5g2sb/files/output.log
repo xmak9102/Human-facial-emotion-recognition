@@ -1,0 +1,132 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+Sanity Checking: 0it [00:00, ?it/s]
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Epoch 0:   4%|█▍                                      | 41/1121 [00:00<00:24, 44.25it/s, loss=1.91, v_num=g2sb]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+Epoch 0:  83%|████████████████████████████████▏      | 925/1121 [00:18<00:04, 48.97it/s, loss=1.27, v_num=g2sb]
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  86%|█████████████████████████████████▎     | 959/1121 [00:19<00:03, 49.45it/s, loss=1.32, v_num=g2sb]
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  89%|██████████████████████████████████▊    | 999/1121 [00:19<00:02, 50.58it/s, loss=1.19, v_num=g2sb]
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  93%|███████████████████████████████████▌  | 1048/1121 [00:20<00:01, 51.92it/s, loss=1.07, v_num=g2sb]
+
+
+
+
+
+
+
+
+
+Epoch 4:  83%|████████████████████████████████▎      | 929/1121 [00:18<00:03, 49.63it/s, loss=1.08, v_num=g2sb]
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  82%|███████████████████████████████       | 918/1121 [00:18<00:04, 48.81it/s, loss=0.985, v_num=g2sb]
+
+Validation DataLoader 0:  84%|███████████████████████████████████████▍       | 188/224 [00:02<00:00, 81.55it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `test_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py", line 127, in <module>
+    trainer.test(pl_module, test_dataloader)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 936, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 983, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1234, in _run
+    results = self._run_stage()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1318, in _run_stage
+    return self._run_evaluate()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1363, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 154, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 111, in advance
+    batch = next(data_fetcher)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/fetching.py", line 184, in __next__
+    return self.fetching_function()
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/fetching.py", line 259, in fetching_function
+    self._fetch_next_batch(self.dataloader_iter)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/fetching.py", line 273, in _fetch_next_batch
+    batch = next(iterator)
+  File "/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.9/dist-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.9/dist-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/dataset/dataset.py", line 29, in __getitem__
+    label = torch.tensor([label], dtype=torch.long)
+

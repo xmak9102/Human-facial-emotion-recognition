@@ -1,0 +1,143 @@
+
+Epoch 0:   2%|█▏                                                      | 24/1121 [00:00<00:31, 34.61it/s, loss=1.87, v_num=sp1w]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type        | Params
+--------------------------------------
+0 | model | SimpleModel | 783 K
+--------------------------------------
+783 K     Trainable params
+0         Non-trainable params
+783 K     Total params
+3.134     Total estimated model params size (MB)
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                not been set for this class (_ResultMetric). The property determines if `update` by
+                default needs access to the full metric state. If this is not the case, significant speedups can be
+                achieved and we recommend setting this to `False`.
+                We provide an checking function
+                `from torchmetrics.utilities import check_forward_no_full_state`
+                that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                default for now) or if `full_state_update=False` can be used safely.
+  warnings.warn(*args, **kwargs)
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  86%|███████████████████████████████████████████████        | 959/1121 [00:24<00:04, 38.95it/s, loss=1.73, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  88%|█████████████████████████████████████████████████▏      | 985/1121 [00:23<00:03, 42.47it/s, loss=1.7, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  85%|██████████████████████████████████████████████▌        | 948/1121 [00:21<00:03, 43.92it/s, loss=1.68, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  82%|█████████████████████████████████████████████▉          | 919/1121 [00:20<00:04, 43.87it/s, loss=1.6, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  90%|████████████████████████████████████████████████▋     | 1012/1121 [00:22<00:02, 44.85it/s, loss=1.61, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  87%|███████████████████████████████████████████████▊       | 974/1121 [00:21<00:03, 44.48it/s, loss=1.68, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  83%|█████████████████████████████████████████████▊         | 935/1121 [00:21<00:04, 43.99it/s, loss=1.62, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  88%|████████████████████████████████████████████████▍      | 987/1121 [00:22<00:03, 43.61it/s, loss=1.56, v_num=sp1w]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 8:  86%|███████████████████████████████████████████████▌       | 969/1121 [00:25<00:04, 37.72it/s, loss=1.65, v_num=sp1w]
+
+

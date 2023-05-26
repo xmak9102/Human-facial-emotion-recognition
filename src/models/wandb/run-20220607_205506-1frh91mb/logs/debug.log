@@ -1,0 +1,25 @@
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_setup.py:_flush():76] Loading settings from /media/data/chitb/.config/wandb/settings
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_setup.py:_flush():76] Loading settings from /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/settings
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/models/train.py', 'program': '/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py'}
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_init.py:_log_setup():428] Logging user logs to /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_205506-1frh91mb/logs/debug.log
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_init.py:_log_setup():429] Logging internal logs to /media/data/chitb/study_zone/ML-_midterm_20212/src/models/wandb/run-20220607_205506-1frh91mb/logs/debug-internal.log
+2022-06-07 20:55:06,828 INFO    MainThread:18995 [wandb_init.py:init():462] calling init triggers
+2022-06-07 20:55:06,829 INFO    MainThread:18995 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {}
+2022-06-07 20:55:06,829 INFO    MainThread:18995 [wandb_init.py:init():515] starting backend
+2022-06-07 20:55:06,829 INFO    MainThread:18995 [wandb_init.py:init():519] setting up manager
+2022-06-07 20:55:06,830 INFO    MainThread:18995 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-06-07 20:55:06,831 INFO    MainThread:18995 [wandb_init.py:init():525] backend started and connected
+2022-06-07 20:55:06,833 INFO    MainThread:18995 [wandb_init.py:init():596] updated telemetry
+2022-06-07 20:55:06,843 INFO    MainThread:18995 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-06-07 20:55:07,450 INFO    MainThread:18995 [wandb_run.py:_on_init():1924] communicating current version
+2022-06-07 20:55:07,628 INFO    MainThread:18995 [wandb_run.py:_on_init():1928] got version response 
+2022-06-07 20:55:07,628 INFO    MainThread:18995 [wandb_init.py:init():662] starting run threads in backend
+2022-06-07 20:55:07,691 INFO    MainThread:18995 [wandb_run.py:_console_start():1898] atexit reg
+2022-06-07 20:55:07,692 INFO    MainThread:18995 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.WRAP
+2022-06-07 20:55:07,692 INFO    MainThread:18995 [wandb_run.py:_redirect():1808] Wrapping output streams.
+2022-06-07 20:55:07,692 INFO    MainThread:18995 [wandb_run.py:_redirect():1832] Redirects installed.
+2022-06-07 20:55:07,692 INFO    MainThread:18995 [wandb_init.py:init():688] run started, returning control to user process
+2022-06-07 20:55:10,693 INFO    MainThread:18995 [wandb_run.py:_config_callback():1136] config_cb None None {'input_dim': 2304, 'hidden_dim': 333, 'num_classes': 7, 'lr': 0.001, 'mode': 'other', 'model': None}
+2022-06-07 21:01:11,967 WARNING MsgRouterThr:18995 [router.py:message_loop():76] message_loop has been closed

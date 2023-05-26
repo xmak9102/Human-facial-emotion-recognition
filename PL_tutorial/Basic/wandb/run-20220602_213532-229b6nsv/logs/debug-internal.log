@@ -1,0 +1,314 @@
+2022-06-02 21:35:32,510 INFO    StreamThr :2908 [internal.py:wandb_internal():90] W&B internal server running at pid: 2908, started at: 2022-06-02 21:35:32.510160
+2022-06-02 21:35:32,513 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: status
+2022-06-02 21:35:32,514 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: status
+2022-06-02 21:35:32,516 INFO    WriterThread:2908 [datastore.py:open_for_write():75] open: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/run-229b6nsv.wandb
+2022-06-02 21:35:32,517 DEBUG   SenderThread:2908 [sender.py:send():232] send: header
+2022-06-02 21:35:32,517 DEBUG   SenderThread:2908 [sender.py:send():232] send: run
+2022-06-02 21:35:32,518 INFO    SenderThread:2908 [sender.py:_maybe_setup_resume():489] checking resume status for None/lightning_tutorial/229b6nsv
+2022-06-02 21:35:33,133 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: check_version
+2022-06-02 21:35:33,135 INFO    SenderThread:2908 [dir_watcher.py:__init__():197] watching files in: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files
+2022-06-02 21:35:33,135 INFO    SenderThread:2908 [sender.py:_start_run_threads():811] run started: 229b6nsv with start time 1654180532
+2022-06-02 21:35:33,135 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:33,135 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:33,136 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: check_version
+2022-06-02 21:35:33,332 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: run_start
+2022-06-02 21:35:33,334 DEBUG   HandlerThread:2908 [meta.py:__init__():35] meta init
+2022-06-02 21:35:33,335 DEBUG   HandlerThread:2908 [meta.py:__init__():49] meta init done
+2022-06-02 21:35:33,335 DEBUG   HandlerThread:2908 [meta.py:probe():209] probe
+2022-06-02 21:35:33,340 DEBUG   HandlerThread:2908 [git.py:repo():29] git repository is invalid
+2022-06-02 21:35:33,340 DEBUG   HandlerThread:2908 [meta.py:_save_pip():53] save pip
+2022-06-02 21:35:33,341 DEBUG   HandlerThread:2908 [meta.py:_save_pip():67] save pip done
+2022-06-02 21:35:33,341 DEBUG   HandlerThread:2908 [meta.py:_save_conda():74] save conda
+2022-06-02 21:35:34,137 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/requirements.txt
+2022-06-02 21:35:34,137 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:34,137 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/conda-environment.yaml
+2022-06-02 21:35:36,405 DEBUG   HandlerThread:2908 [meta.py:_save_conda():84] save conda done
+2022-06-02 21:35:36,405 DEBUG   HandlerThread:2908 [meta.py:probe():247] probe done
+2022-06-02 21:35:36,467 DEBUG   SenderThread:2908 [sender.py:send():232] send: files
+2022-06-02 21:35:36,468 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-02 21:35:36,476 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-02 21:35:36,476 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: stop_status
+2022-06-02 21:35:36,767 DEBUG   SenderThread:2908 [sender.py:send():232] send: telemetry
+2022-06-02 21:35:36,767 DEBUG   SenderThread:2908 [sender.py:send():232] send: metric
+2022-06-02 21:35:36,768 DEBUG   SenderThread:2908 [sender.py:send():232] send: telemetry
+2022-06-02 21:35:36,768 DEBUG   SenderThread:2908 [sender.py:send():232] send: metric
+2022-06-02 21:35:36,768 WARNING SenderThread:2908 [sender.py:send_metric():904] Seen metric with glob (shouldn't happen)
+2022-06-02 21:35:36,769 DEBUG   SenderThread:2908 [sender.py:send():232] send: config
+2022-06-02 21:35:37,138 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/conda-environment.yaml
+2022-06-02 21:35:37,139 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-metadata.json
+2022-06-02 21:35:37,139 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:37,256 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:37,259 DEBUG   SenderThread:2908 [sender.py:send():232] send: metric
+2022-06-02 21:35:37,261 DEBUG   SenderThread:2908 [sender.py:send():232] send: metric
+2022-06-02 21:35:37,261 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:37,261 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:37,265 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:37,314 INFO    Thread-16 :2908 [upload_job.py:push():132] Uploaded file /tmp/tmpdvry_wv9wandb/12h5iuac-wandb-metadata.json
+2022-06-02 21:35:37,858 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:37,860 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:37,860 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:37,861 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:38,139 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:38,491 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:38,492 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:38,492 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:38,493 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:39,001 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:39,002 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:39,002 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:39,002 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:39,139 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:39,140 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:39,525 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:39,526 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:39,527 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:39,530 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:40,054 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:40,055 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:40,056 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:40,056 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:40,140 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:40,571 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:40,571 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:40,572 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:40,573 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:41,093 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:41,094 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:41,095 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:41,096 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:41,140 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:41,140 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:41,597 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:41,599 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:41,600 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:41,602 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:42,113 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:42,114 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:42,115 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:42,116 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:42,140 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:42,621 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:42,622 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:42,623 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:42,623 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:43,111 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:43,112 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:43,112 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:43,113 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:43,141 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:43,141 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:43,637 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:43,638 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:43,639 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:43,641 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:44,141 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:44,209 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:44,209 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:44,210 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:44,210 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:44,803 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:44,804 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:44,804 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:44,805 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:45,142 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:45,142 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:45,254 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:45,255 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:45,255 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:45,256 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:45,691 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:45,692 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:45,692 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:45,694 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:46,129 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:46,130 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:46,130 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:46,131 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:46,142 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:46,626 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:46,626 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:46,627 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:46,627 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:47,070 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:47,071 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:47,072 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:47,072 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:47,142 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:47,143 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:47,557 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:47,558 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:47,559 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:47,560 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:48,020 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:48,020 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:48,021 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:48,023 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:48,143 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:48,490 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:48,491 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:48,491 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:48,492 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:48,984 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:48,985 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:48,986 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:48,986 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:49,143 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:49,143 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:49,384 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:49,385 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:49,385 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:49,386 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:49,859 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:49,859 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:49,860 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:49,860 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:50,144 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:50,376 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:50,377 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:50,378 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:50,380 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:50,896 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:50,897 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:50,897 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:50,898 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:51,144 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:51,144 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:51,351 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:51,352 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:51,352 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:51,353 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:51,771 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-02 21:35:51,771 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: stop_status
+2022-06-02 21:35:51,805 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:52,063 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:52,063 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:52,064 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:52,144 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:53,145 INFO    Thread-12 :2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:54,647 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-02 21:35:54,648 DEBUG   SenderThread:2908 [sender.py:send():232] send: metric
+2022-06-02 21:35:54,649 DEBUG   SenderThread:2908 [sender.py:send():232] send: history
+2022-06-02 21:35:54,649 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:54,649 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:54,665 DEBUG   SenderThread:2908 [sender.py:send():232] send: exit
+2022-06-02 21:35:54,665 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:54,665 INFO    SenderThread:2908 [sender.py:send_exit():368] handling exit code: 1
+2022-06-02 21:35:54,666 INFO    SenderThread:2908 [sender.py:send_exit():370] handling runtime: 21
+2022-06-02 21:35:54,666 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:54,666 INFO    SenderThread:2908 [sender.py:send_exit():376] send defer
+2022-06-02 21:35:54,666 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:54,667 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:54,667 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-02 21:35:54,668 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:54,668 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-06-02 21:35:54,668 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 1
+2022-06-02 21:35:54,668 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:54,668 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-02 21:35:54,689 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:54,689 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-06-02 21:35:54,690 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 2
+2022-06-02 21:35:54,690 DEBUG   SenderThread:2908 [sender.py:send():232] send: stats
+2022-06-02 21:35:54,690 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:54,690 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-02 21:35:54,691 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:54,691 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-06-02 21:35:54,691 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 3
+2022-06-02 21:35:54,691 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:54,691 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-02 21:35:54,691 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:54,691 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-06-02 21:35:54,691 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 4
+2022-06-02 21:35:54,691 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:54,692 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-02 21:35:54,692 DEBUG   SenderThread:2908 [sender.py:send():232] send: summary
+2022-06-02 21:35:54,692 INFO    SenderThread:2908 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-02 21:35:54,692 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:54,692 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-06-02 21:35:54,693 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 5
+2022-06-02 21:35:54,693 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:54,693 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-02 21:35:54,693 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:54,693 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-06-02 21:35:54,769 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,017 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 6
+2022-06-02 21:35:55,017 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,019 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:55,019 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-02 21:35:55,020 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:55,020 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-06-02 21:35:55,021 INFO    SenderThread:2908 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-02 21:35:55,122 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,146 INFO    SenderThread:2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:55,147 INFO    SenderThread:2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:55,147 INFO    SenderThread:2908 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/config.yaml
+2022-06-02 21:35:55,147 INFO    SenderThread:2908 [dir_watcher.py:finish():342] scan: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files
+2022-06-02 21:35:55,148 INFO    SenderThread:2908 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log output.log
+2022-06-02 21:35:55,148 INFO    SenderThread:2908 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/conda-environment.yaml conda-environment.yaml
+2022-06-02 21:35:55,155 INFO    SenderThread:2908 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/config.yaml config.yaml
+2022-06-02 21:35:55,155 INFO    SenderThread:2908 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-metadata.json wandb-metadata.json
+2022-06-02 21:35:55,156 INFO    SenderThread:2908 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/requirements.txt requirements.txt
+2022-06-02 21:35:55,165 INFO    SenderThread:2908 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json wandb-summary.json
+2022-06-02 21:35:55,170 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 7
+2022-06-02 21:35:55,174 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,176 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:55,176 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-02 21:35:55,177 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:55,177 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-06-02 21:35:55,177 INFO    SenderThread:2908 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-02 21:35:55,278 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,279 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,380 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,380 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,482 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,482 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,584 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,584 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,685 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,686 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,788 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,788 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,871 INFO    Thread-17 :2908 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/output.log
+2022-06-02 21:35:55,888 INFO    Thread-19 :2908 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/config.yaml
+2022-06-02 21:35:55,890 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,890 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:55,898 INFO    Thread-21 :2908 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/wandb-summary.json
+2022-06-02 21:35:55,903 INFO    Thread-18 :2908 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/conda-environment.yaml
+2022-06-02 21:35:55,905 INFO    Thread-20 :2908 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/files/requirements.txt
+2022-06-02 21:35:55,992 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:55,992 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:56,094 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:56,094 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:56,106 INFO    Thread-11 :2908 [sender.py:transition_state():389] send defer: 8
+2022-06-02 21:35:56,106 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:56,107 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-02 21:35:56,107 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:56,108 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-06-02 21:35:56,195 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:56,848 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 9
+2022-06-02 21:35:56,848 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:56,849 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:56,849 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-02 21:35:56,850 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:56,850 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-06-02 21:35:56,850 INFO    SenderThread:2908 [sender.py:transition_state():389] send defer: 10
+2022-06-02 21:35:56,851 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: defer
+2022-06-02 21:35:56,851 INFO    HandlerThread:2908 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-02 21:35:56,851 DEBUG   SenderThread:2908 [sender.py:send():232] send: final
+2022-06-02 21:35:56,851 DEBUG   SenderThread:2908 [sender.py:send():232] send: footer
+2022-06-02 21:35:56,851 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: defer
+2022-06-02 21:35:56,852 INFO    SenderThread:2908 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-06-02 21:35:56,950 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-02 21:35:56,951 DEBUG   SenderThread:2908 [sender.py:send_request():246] send_request: poll_exit
+2022-06-02 21:35:56,951 INFO    SenderThread:2908 [file_pusher.py:join():150] waiting for file pusher
+2022-06-02 21:35:57,631 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-02 21:35:57,633 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-02 21:35:57,633 INFO    MainThread:2908 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-06-02 21:35:57,634 INFO    MainThread:2908 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-06-02 21:35:57,634 INFO    MainThread:2908 [wandb_run.py:_footer_sync_info():3060] logging synced files
+2022-06-02 21:35:57,634 DEBUG   HandlerThread:2908 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-02 21:35:57,635 INFO    HandlerThread:2908 [handler.py:finish():806] shutting down handler
+2022-06-02 21:35:57,852 INFO    WriterThread:2908 [datastore.py:close():279] close: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220602_213532-229b6nsv/run-229b6nsv.wandb
+2022-06-02 21:35:58,530 INFO    SenderThread:2908 [sender.py:finish():1110] shutting down sender
+2022-06-02 21:35:58,530 INFO    SenderThread:2908 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-02 21:35:58,530 INFO    SenderThread:2908 [file_pusher.py:join():150] waiting for file pusher
+2022-06-02 21:35:58,638 INFO    MainThread:2908 [internal.py:handle_exit():80] Internal process exited

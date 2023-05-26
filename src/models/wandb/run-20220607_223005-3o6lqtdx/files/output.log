@@ -1,0 +1,166 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████| 2/2 [00:00<00:00, 26.28it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+
+Epoch 0:  88%|██████████████████████████████████▍    | 991/1121 [00:19<00:02, 50.17it/s, loss=1.24, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  91%|██████████████████████████████████▌   | 1020/1121 [00:19<00:01, 51.28it/s, loss=1.42, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+Epoch 2:  81%|███████████████████████████████▌       | 909/1121 [00:18<00:04, 49.42it/s, loss=1.53, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  88%|██████████████████████████████████▏    | 984/1121 [00:19<00:02, 51.30it/s, loss=1.03, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  93%|████████████████████████████████████   | 1038/1121 [00:19<00:01, 51.96it/s, loss=1.1, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+Epoch 5:  83%|████████████████████████████████▌      | 936/1121 [00:18<00:03, 50.39it/s, loss=1.01, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  89%|█████████████████████████████████    | 1001/1121 [00:19<00:02, 51.50it/s, loss=0.792, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  91%|█████████████████████████████████▊   | 1023/1121 [00:19<00:01, 51.72it/s, loss=0.756, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+Epoch 8:  82%|███████████████████████████████       | 915/1121 [00:18<00:04, 49.73it/s, loss=0.649, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 9:  87%|████████████████████████████████▉     | 970/1121 [00:19<00:02, 50.46it/s, loss=0.492, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+
+Epoch 10:  92%|█████████████████████████████████▏  | 1032/1121 [00:19<00:01, 51.82it/s, loss=0.375, v_num=qtdx]
+
+
+
+
+
+
+
+
+
+Epoch 11:  82%|██████████████████████████████▏      | 916/1121 [00:18<00:04, 49.54it/s, loss=0.287, v_num=qtdx]
+
+Validation DataLoader 0:  85%|████████████████████████████████████████       | 191/224 [00:02<00:00, 84.95it/s]
+Traceback (most recent call last):
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py", line 127, in <module>
+    trainer.predict(pl_module, test_dataloader)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1023, in predict
+    return self._call_and_handle_interrupt(
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1070, in _predict_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1158, in _run
+    verify_loop_configurations(self)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py", line 48, in verify_loop_configurations
+    __verify_eval_loop_configuration(trainer, model, "predict")
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py", line 204, in __verify_eval_loop_configuration
+    raise MisconfigurationException("`Trainer.predict` requires `forward` method to run.")
+

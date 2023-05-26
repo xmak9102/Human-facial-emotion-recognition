@@ -1,0 +1,18 @@
+train:
+  loader:
+    batch_size: 32
+  optim:
+    optimizer: Adam
+    lr: 0.001
+  training:
+    model: resnet18
+    epochs: 9
+    mode: pretrained
+val:
+  batch_size: 1
+  shuffle: false
+  method: normal
+test:
+  batch_size: 1
+  shuffle: false
+  method: normal

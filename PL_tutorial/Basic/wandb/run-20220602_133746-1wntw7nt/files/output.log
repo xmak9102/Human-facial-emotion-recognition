@@ -1,0 +1,44 @@
+data and label torch.Size([1, 28, 28]) 7
+Sanity Checking DataLoader 0: 100%|█████████████| 2/2 [00:00<00:00, 106.03it/s]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type  | Params
+--------------------------------
+0 | model | Model | 7.9 K
+--------------------------------
+7.9 K     Trainable params
+0         Non-trainable params
+7.9 K     Total params
+0.031     Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 103, in <module>
+    trainer.fit(model, train_loader, dev_loader)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 768, in fit
+    self._call_and_handle_interrupt(
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 809, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1234, in _run
+    results = self._run_stage()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1321, in _run_stage
+    return self._run_train()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1343, in _run_train
+    self._run_sanity_check()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1411, in _run_sanity_check
+    val_loop.run()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 211, in run
+    output = self.on_run_end()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 188, in on_run_end
+    self._evaluation_epoch_end(self._outputs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 310, in _evaluation_epoch_end
+    self.trainer._call_lightning_module_hook("validation_epoch_end", output_or_outputs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1593, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/xps/educate/code/hust/ML/PL_tutorial/Basic/logger.py", line 75, in validation_epoch_end
+    all_preds = torch.sum(validation_step_outputs, dim=0)
+TypeError: sum() received an invalid combination of arguments - got (list, dim=int), but expected one of:
+ * (Tensor input, *, torch.dtype dtype)
+ * (Tensor input, tuple of ints dim, bool keepdim, *, torch.dtype dtype, Tensor out)

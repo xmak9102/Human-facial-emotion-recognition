@@ -1,0 +1,16 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-06-07T03:52:07.904071",
+    "startedAt": "2022-06-07T03:52:06.689999",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/xps/educate/code/hust/ML/src/models/train.py",
+    "codePath": "train.py",
+    "host": "DESKTOP-L55QTJ7",
+    "username": "xps",
+    "executable": "/home/xps/anaconda3/envs/deeplearning/bin/python"
+}

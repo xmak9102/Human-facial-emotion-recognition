@@ -1,0 +1,297 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0:   0%|                                                      | 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Epoch 0:   6%|██▎                                     | 65/1121 [00:01<00:23, 45.50it/s, loss=1.77, v_num=nujv]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+Epoch 0:  81%|███████████████████████████████▍       | 905/1121 [00:19<00:04, 45.72it/s, loss=1.44, v_num=nujv]
+
+
+Validation DataLoader 0:  12%|█████▌                                          | 26/224 [00:04<00:38,  5.19it/s]
+/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py:83: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  81%|███████████████████████████████▌       | 907/1121 [00:20<00:04, 44.44it/s, loss=1.34, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  80%|████████████████████████████████        | 900/1121 [00:19<00:04, 47.26it/s, loss=1.2, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  80%|██████████████████████████████▌       | 902/1121 [00:19<00:04, 46.42it/s, loss=0.983, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  80%|██████████████████████████████▌       | 900/1121 [00:18<00:04, 48.12it/s, loss=0.972, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  81%|██████████████████████████████▋       | 907/1121 [00:20<00:04, 44.78it/s, loss=0.841, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  81%|██████████████████████████████▌       | 903/1121 [00:19<00:04, 46.74it/s, loss=0.638, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  81%|██████████████████████████████▊       | 908/1121 [00:20<00:04, 45.04it/s, loss=0.546, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 8:  81%|██████████████████████████████▌       | 903/1121 [00:19<00:04, 46.47it/s, loss=0.425, v_num=nujv]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

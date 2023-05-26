@@ -1,0 +1,151 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████| 2/2 [00:00<00:00, 27.72it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Epoch 0:   6%|██▌                                      | 71/1121 [00:01<00:22, 45.75it/s, loss=1.7, v_num=pjr3]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+Epoch 0:  90%|██████████████████████████████████▏   | 1008/1121 [00:19<00:02, 51.30it/s, loss=1.24, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  92%|██████████████████████████████████▉   | 1031/1121 [00:20<00:01, 51.17it/s, loss=1.47, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+Epoch 2:  81%|███████████████████████████████▋       | 910/1121 [00:18<00:04, 48.97it/s, loss=1.16, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  86%|█████████████████████████████████▌     | 966/1121 [00:19<00:03, 50.57it/s, loss=1.05, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  90%|██████████████████████████████████    | 1006/1121 [00:19<00:02, 50.90it/s, loss=1.06, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+Epoch 5:  80%|██████████████████████████████▍       | 897/1121 [00:18<00:04, 49.25it/s, loss=0.937, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 6:  85%|████████████████████████████████▏     | 951/1121 [00:18<00:03, 50.13it/s, loss=0.784, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  84%|███████████████████████████████▉      | 941/1121 [00:19<00:03, 49.19it/s, loss=0.807, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 8:  86%|█████████████████████████████████▍     | 960/1121 [00:19<00:03, 50.00it/s, loss=0.81, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 9:  91%|█████████████████████████████████▌   | 1016/1121 [00:19<00:02, 51.54it/s, loss=0.465, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+
+Epoch 10:  94%|█████████████████████████████████▊  | 1052/1121 [00:20<00:01, 51.56it/s, loss=0.389, v_num=pjr3]
+
+
+
+
+
+
+
+
+
+Epoch 11:  83%|██████████████████████████████▋      | 929/1121 [00:18<00:03, 49.79it/s, loss=0.262, v_num=pjr3]
+
+

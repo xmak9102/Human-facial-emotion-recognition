@@ -1,0 +1,35 @@
+2022-06-07 10:14:21,986 INFO    MainThread:6221 [wandb_setup.py:_flush():76] Loading settings from /home/xps/.config/wandb/settings
+2022-06-07 10:14:21,987 INFO    MainThread:6221 [wandb_setup.py:_flush():76] Loading settings from /home/xps/educate/code/hust/ML/src/models/wandb/settings
+2022-06-07 10:14:21,987 INFO    MainThread:6221 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-06-07 10:14:21,987 INFO    MainThread:6221 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/home/xps/educate/code/hust/ML/src/models/train.py'}
+2022-06-07 10:14:21,987 INFO    MainThread:6221 [wandb_init.py:_log_setup():428] Logging user logs to /home/xps/educate/code/hust/ML/src/models/wandb/run-20220607_101421-2ixdw7hv/logs/debug.log
+2022-06-07 10:14:21,988 INFO    MainThread:6221 [wandb_init.py:_log_setup():429] Logging internal logs to /home/xps/educate/code/hust/ML/src/models/wandb/run-20220607_101421-2ixdw7hv/logs/debug-internal.log
+2022-06-07 10:14:21,988 INFO    MainThread:6221 [wandb_init.py:init():462] calling init triggers
+2022-06-07 10:14:21,989 INFO    MainThread:6221 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {}
+2022-06-07 10:14:21,989 INFO    MainThread:6221 [wandb_init.py:init():515] starting backend
+2022-06-07 10:14:21,989 INFO    MainThread:6221 [wandb_init.py:init():519] setting up manager
+2022-06-07 10:14:21,994 INFO    MainThread:6221 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-06-07 10:14:22,000 INFO    MainThread:6221 [wandb_init.py:init():525] backend started and connected
+2022-06-07 10:14:22,008 INFO    MainThread:6221 [wandb_init.py:init():596] updated telemetry
+2022-06-07 10:14:22,011 INFO    MainThread:6221 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-06-07 10:14:22,391 WARNING MainThread:6221 [wandb_init.py:init():1020] interrupted
+Traceback (most recent call last):
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 999, in init
+    run = wi.init()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 630, in init
+    run_result = backend.interface.communicate_run(
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 223, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 324, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2022-06-07 10:14:28,712 WARNING MsgRouterThr:6221 [router.py:message_loop():76] message_loop has been closed

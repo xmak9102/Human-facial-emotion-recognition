@@ -1,0 +1,163 @@
+2022-06-03 14:28:18,954 INFO    StreamThr :7517 [internal.py:wandb_internal():90] W&B internal server running at pid: 7517, started at: 2022-06-03 14:28:18.953266
+2022-06-03 14:28:18,956 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: status
+2022-06-03 14:28:18,958 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: status
+2022-06-03 14:28:18,959 DEBUG   SenderThread:7517 [sender.py:send():232] send: header
+2022-06-03 14:28:18,960 INFO    WriterThread:7517 [datastore.py:open_for_write():75] open: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/run-p8r1g6n8.wandb
+2022-06-03 14:28:18,960 DEBUG   SenderThread:7517 [sender.py:send():232] send: run
+2022-06-03 14:28:18,964 INFO    SenderThread:7517 [sender.py:_maybe_setup_resume():489] checking resume status for None/lightning_tutorial/p8r1g6n8
+2022-06-03 14:28:19,589 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: check_version
+2022-06-03 14:28:19,594 INFO    SenderThread:7517 [dir_watcher.py:__init__():197] watching files in: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files
+2022-06-03 14:28:19,595 INFO    SenderThread:7517 [sender.py:_start_run_threads():811] run started: p8r1g6n8 with start time 1654241298
+2022-06-03 14:28:19,595 DEBUG   SenderThread:7517 [sender.py:send():232] send: summary
+2022-06-03 14:28:19,597 INFO    SenderThread:7517 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-03 14:28:19,598 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: check_version
+2022-06-03 14:28:19,815 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: run_start
+2022-06-03 14:28:19,817 DEBUG   HandlerThread:7517 [meta.py:__init__():35] meta init
+2022-06-03 14:28:19,817 DEBUG   HandlerThread:7517 [meta.py:__init__():49] meta init done
+2022-06-03 14:28:19,818 DEBUG   HandlerThread:7517 [meta.py:probe():209] probe
+2022-06-03 14:28:19,821 DEBUG   HandlerThread:7517 [git.py:repo():29] git repository is invalid
+2022-06-03 14:28:19,821 DEBUG   HandlerThread:7517 [meta.py:_save_pip():53] save pip
+2022-06-03 14:28:19,822 DEBUG   HandlerThread:7517 [meta.py:_save_pip():67] save pip done
+2022-06-03 14:28:19,822 DEBUG   HandlerThread:7517 [meta.py:_save_conda():74] save conda
+2022-06-03 14:28:20,598 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/wandb-summary.json
+2022-06-03 14:28:20,598 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/requirements.txt
+2022-06-03 14:28:20,598 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/conda-environment.yaml
+2022-06-03 14:28:24,391 DEBUG   HandlerThread:7517 [meta.py:_save_conda():84] save conda done
+2022-06-03 14:28:24,391 DEBUG   HandlerThread:7517 [meta.py:probe():247] probe done
+2022-06-03 14:28:24,498 DEBUG   SenderThread:7517 [sender.py:send():232] send: files
+2022-06-03 14:28:24,499 INFO    SenderThread:7517 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-03 14:28:24,512 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-03 14:28:24,513 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: stop_status
+2022-06-03 14:28:24,597 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/conda-environment.yaml
+2022-06-03 14:28:24,597 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/wandb-metadata.json
+2022-06-03 14:28:24,597 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_created():244] file/dir created: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/output.log
+2022-06-03 14:28:24,829 DEBUG   SenderThread:7517 [sender.py:send():232] send: telemetry
+2022-06-03 14:28:24,830 DEBUG   SenderThread:7517 [sender.py:send():232] send: metric
+2022-06-03 14:28:24,830 DEBUG   SenderThread:7517 [sender.py:send():232] send: telemetry
+2022-06-03 14:28:24,830 DEBUG   SenderThread:7517 [sender.py:send():232] send: metric
+2022-06-03 14:28:24,830 WARNING SenderThread:7517 [sender.py:send_metric():904] Seen metric with glob (shouldn't happen)
+2022-06-03 14:28:24,830 DEBUG   SenderThread:7517 [sender.py:send():232] send: config
+2022-06-03 14:28:25,307 INFO    Thread-16 :7517 [upload_job.py:push():132] Uploaded file /tmp/tmp4j5jp6ddwandb/249fywpz-wandb-metadata.json
+2022-06-03 14:28:26,597 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/output.log
+2022-06-03 14:28:27,407 DEBUG   SenderThread:7517 [sender.py:send():232] send: exit
+2022-06-03 14:28:27,408 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:27,408 INFO    SenderThread:7517 [sender.py:send_exit():368] handling exit code: 1
+2022-06-03 14:28:27,409 INFO    SenderThread:7517 [sender.py:send_exit():370] handling runtime: 7
+2022-06-03 14:28:27,410 INFO    SenderThread:7517 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-03 14:28:27,411 INFO    SenderThread:7517 [sender.py:send_exit():376] send defer
+2022-06-03 14:28:27,412 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:27,412 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,415 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-03 14:28:27,416 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,416 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-06-03 14:28:27,416 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 1
+2022-06-03 14:28:27,416 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,417 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-03 14:28:27,451 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,452 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-06-03 14:28:27,452 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 2
+2022-06-03 14:28:27,452 DEBUG   SenderThread:7517 [sender.py:send():232] send: stats
+2022-06-03 14:28:27,453 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,454 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-03 14:28:27,457 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,457 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-06-03 14:28:27,457 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 3
+2022-06-03 14:28:27,459 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,459 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-03 14:28:27,460 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,460 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-06-03 14:28:27,460 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 4
+2022-06-03 14:28:27,461 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,461 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-03 14:28:27,462 DEBUG   SenderThread:7517 [sender.py:send():232] send: summary
+2022-06-03 14:28:27,463 INFO    SenderThread:7517 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-03 14:28:27,463 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,463 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-06-03 14:28:27,463 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 5
+2022-06-03 14:28:27,464 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,464 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-03 14:28:27,464 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,464 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-06-03 14:28:27,518 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:27,598 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/wandb-summary.json
+2022-06-03 14:28:27,795 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 6
+2022-06-03 14:28:27,796 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:27,797 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:27,797 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-03 14:28:27,797 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:27,797 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-06-03 14:28:27,797 INFO    SenderThread:7517 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-03 14:28:27,898 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:28,598 INFO    Thread-12 :7517 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/config.yaml
+2022-06-03 14:28:28,599 INFO    SenderThread:7517 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/output.log
+2022-06-03 14:28:28,599 INFO    SenderThread:7517 [dir_watcher.py:finish():342] scan: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files
+2022-06-03 14:28:28,599 INFO    SenderThread:7517 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/output.log output.log
+2022-06-03 14:28:28,599 INFO    SenderThread:7517 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/conda-environment.yaml conda-environment.yaml
+2022-06-03 14:28:28,599 INFO    SenderThread:7517 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/config.yaml config.yaml
+2022-06-03 14:28:28,600 INFO    SenderThread:7517 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/wandb-metadata.json wandb-metadata.json
+2022-06-03 14:28:28,600 INFO    SenderThread:7517 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/requirements.txt requirements.txt
+2022-06-03 14:28:28,600 INFO    SenderThread:7517 [dir_watcher.py:finish():356] scan save: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/wandb-summary.json wandb-summary.json
+2022-06-03 14:28:28,600 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 7
+2022-06-03 14:28:28,600 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:28,601 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:28,602 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-03 14:28:28,606 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:28,608 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-06-03 14:28:28,619 INFO    SenderThread:7517 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-03 14:28:28,721 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:28,721 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:28,824 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:28,825 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:28,929 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:28,929 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,036 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:29,036 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,137 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:29,138 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,240 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:29,241 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,329 INFO    Thread-18 :7517 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/conda-environment.yaml
+2022-06-03 14:28:29,336 INFO    Thread-17 :7517 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/output.log
+2022-06-03 14:28:29,343 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:29,343 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,359 INFO    Thread-19 :7517 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/config.yaml
+2022-06-03 14:28:29,363 INFO    Thread-20 :7517 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/requirements.txt
+2022-06-03 14:28:29,365 INFO    Thread-21 :7517 [upload_job.py:push():132] Uploaded file /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/files/wandb-summary.json
+2022-06-03 14:28:29,445 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:29,445 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,546 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:29,547 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:29,565 INFO    Thread-11 :7517 [sender.py:transition_state():389] send defer: 8
+2022-06-03 14:28:29,566 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:29,566 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-03 14:28:29,567 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:29,567 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-06-03 14:28:29,649 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:30,031 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 9
+2022-06-03 14:28:30,032 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:30,032 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:30,032 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-03 14:28:30,033 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:30,033 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-06-03 14:28:30,033 INFO    SenderThread:7517 [sender.py:transition_state():389] send defer: 10
+2022-06-03 14:28:30,034 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: defer
+2022-06-03 14:28:30,034 INFO    HandlerThread:7517 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-03 14:28:30,035 DEBUG   SenderThread:7517 [sender.py:send():232] send: final
+2022-06-03 14:28:30,035 DEBUG   SenderThread:7517 [sender.py:send():232] send: footer
+2022-06-03 14:28:30,035 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: defer
+2022-06-03 14:28:30,035 INFO    SenderThread:7517 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-06-03 14:28:30,134 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-03 14:28:30,134 DEBUG   SenderThread:7517 [sender.py:send_request():246] send_request: poll_exit
+2022-06-03 14:28:30,134 INFO    SenderThread:7517 [file_pusher.py:join():150] waiting for file pusher
+2022-06-03 14:28:30,817 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-03 14:28:30,818 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-03 14:28:30,819 INFO    MainThread:7517 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-06-03 14:28:30,819 INFO    MainThread:7517 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-06-03 14:28:30,819 INFO    MainThread:7517 [wandb_run.py:_footer_sync_info():3060] logging synced files
+2022-06-03 14:28:30,819 DEBUG   HandlerThread:7517 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-03 14:28:30,820 INFO    HandlerThread:7517 [handler.py:finish():806] shutting down handler
+2022-06-03 14:28:31,035 INFO    WriterThread:7517 [datastore.py:close():279] close: /home/xps/educate/code/hust/ML/PL_tutorial/Basic/wandb/run-20220603_142818-p8r1g6n8/run-p8r1g6n8.wandb
+2022-06-03 14:28:31,716 INFO    SenderThread:7517 [sender.py:finish():1110] shutting down sender
+2022-06-03 14:28:31,716 INFO    SenderThread:7517 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-03 14:28:31,716 INFO    SenderThread:7517 [file_pusher.py:join():150] waiting for file pusher
+2022-06-03 14:28:31,823 INFO    MainThread:7517 [internal.py:handle_exit():80] Internal process exited

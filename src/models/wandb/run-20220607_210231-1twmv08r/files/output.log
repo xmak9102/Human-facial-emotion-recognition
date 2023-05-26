@@ -1,0 +1,273 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Epoch 0:   2%|▏      | 23/1121 [00:00<00:24, 44.48it/s, loss=2.05, v_num=v08r]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+Epoch 0:  87%|█████▏| 974/1121 [00:18<00:02, 51.61it/s, loss=1.45, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 1:  83%|████▉ | 929/1121 [00:17<00:03, 51.74it/s, loss=1.37, v_num=v08r]
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  95%|█████▋| 1061/1121 [00:19<00:01, 54.54it/s, loss=1.2, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 3:  95%|███▊| 1069/1121 [00:19<00:00, 54.94it/s, loss=0.973, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 4:  93%|███▋| 1042/1121 [00:19<00:01, 54.66it/s, loss=0.981, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 5:  88%|████▍| 990/1121 [00:18<00:02, 52.75it/s, loss=0.846, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 6:  85%|████▏| 949/1121 [00:18<00:03, 52.32it/s, loss=0.626, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 7:  80%|████▊ | 902/1121 [00:17<00:04, 51.07it/s, loss=0.54, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 8:  82%|████ | 914/1121 [00:17<00:04, 51.71it/s, loss=0.381, v_num=v08r]
+
+
+
+
+
+
+
+
+
+
+Epoch 9:  93%|███▋| 1037/1121 [00:19<00:01, 53.76it/s, loss=0.354, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 10:  89%|███▌| 994/1121 [00:18<00:02, 53.19it/s, loss=0.264, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 11:  85%|███▍| 948/1121 [00:18<00:03, 52.15it/s, loss=0.225, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 12:  82%|███▎| 915/1121 [00:17<00:04, 51.22it/s, loss=0.204, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 13:  80%|███▏| 901/1121 [00:17<00:04, 51.00it/s, loss=0.187, v_num=v08r]
+
+
+
+
+
+
+
+
+
+
+Epoch 14:  92%|██▊| 1031/1121 [00:19<00:01, 53.92it/s, loss=0.133, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 15:  86%|███▍| 961/1121 [00:18<00:03, 51.67it/s, loss=0.169, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 16:  81%|███▏| 904/1121 [00:17<00:04, 50.74it/s, loss=0.126, v_num=v08r]
+
+
+
+
+
+
+
+
+
+
+Epoch 17:  95%|██▊| 1062/1121 [00:19<00:01, 53.93it/s, loss=0.171, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 18:  89%|██▋| 1000/1121 [00:18<00:02, 52.76it/s, loss=0.144, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 19:  84%|██▌| 945/1121 [00:18<00:03, 51.77it/s, loss=0.0852, v_num=v08r]
+
+
+
+
+
+
+
+
+
+
+Epoch 20:  95%|█▉| 1061/1121 [00:19<00:01, 53.95it/s, loss=0.0855, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 21:  90%|█▊| 1008/1121 [00:19<00:02, 53.03it/s, loss=0.0775, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 22:  88%|██▋| 992/1121 [00:18<00:02, 52.57it/s, loss=0.0918, v_num=v08r]
+
+
+
+
+
+
+
+
+
+Epoch 23:  82%|███▎| 919/1121 [00:18<00:03, 50.51it/s, loss=0.102, v_num=v08r]
+
+
+
+
+
+Epoch 24:  32%|▉  | 362/1121 [00:07<00:14, 50.70it/s, loss=0.0595, v_num=v08r]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py:724: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+

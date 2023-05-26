@@ -1,0 +1,3 @@
+input_dim: 784
+lr: 0.01
+num_classes: 10

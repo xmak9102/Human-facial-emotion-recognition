@@ -1,0 +1,13 @@
+[2022-06-11 23:11:35,538][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp7l2wzc0i
+[2022-06-11 23:11:35,538][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp7l2wzc0i/_remote_module_non_sriptable.py
+Error executing job with overrides: ['test.method=normal']
+Traceback (most recent call last):
+  File "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train_with_pl.py", line 182, in main
+    trainer = pl.Trainer(gpus=1 if torch.cuda.is_available() else 0, max_epochs=cfg.train.training.epochs, default_root_dir=ckp_dir, logger=wandb_logger, callbacks=[custom_callbacks])
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 558, in __init__
+    self._call_callback_hooks("on_init_start")
+  File "/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1612, in _call_callback_hooks
+    fn = getattr(callback, hook_name)
+AttributeError: 'list' object has no attribute 'on_init_start'

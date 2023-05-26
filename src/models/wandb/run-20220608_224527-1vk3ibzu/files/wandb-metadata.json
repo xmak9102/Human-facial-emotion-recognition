@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.15.0-171-generic-x86_64-with-glibc2.27",
+    "python": "3.9.10",
+    "heartbeatAt": "2022-06-08T15:45:28.244925",
+    "startedAt": "2022-06-08T15:45:27.470830",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/media/data/chitb/study_zone/ML-_midterm_20212/src/models/train.py",
+    "codePath": "src/models/train.py",
+    "git": {
+        "remote": "https://github.com/baochi0212/ML-_midterm_20212",
+        "commit": "5ccb71ba848b7ad7b04c668e2fde6d51bb2c7077"
+    },
+    "email": "chideptraiak29@gmail.com",
+    "root": "/media/data/chitb/study_zone/ML-_midterm_20212",
+    "host": "quangnh-System-Product-Name",
+    "username": "chitb",
+    "executable": "/usr/bin/python3"
+}

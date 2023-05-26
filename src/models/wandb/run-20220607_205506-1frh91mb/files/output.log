@@ -1,0 +1,201 @@
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py:261: UserWarning: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+  rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Epoch 0:   2%|▋                                       | 18/1121 [00:00<00:26, 41.66it/s, loss=5.76, v_num=91mb]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name  | Type   | Params
+---------------------------------
+0 | model | ResNet | 11.7 M
+---------------------------------
+11.7 M    Trainable params
+0         Non-trainable params
+11.7 M    Total params
+46.772    Total estimated model params size (MB)
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:487: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+Epoch 0:  86%|█████████████████████████████████▍     | 961/1121 [00:18<00:03, 52.18it/s, loss=1.28, v_num=91mb]
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  95%|▉| 1060/1121 [00:20<00:01, 52.15it/s, lo
+
+
+
+
+
+
+
+
+
+Epoch 2:  92%|████▌| 1029/1121 [00:18<00:01, 54.45it/s, loss=1.31, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 3:  88%|████▍| 984/1121 [00:18<00:02, 52.96it/s, loss=0.992, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 4:  89%|████▍| 993/1121 [00:18<00:02, 53.51it/s, loss=0.902, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 5:  86%|████▎| 961/1121 [00:18<00:03, 52.76it/s, loss=0.924, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 6:  83%|████▉ | 932/1121 [00:17<00:03, 52.27it/s, loss=0.74, v_num=91mb]
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  95%|███▊| 1061/1121 [00:19<00:01, 54.27it/s, loss=0.713, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 8:  91%|███▋| 1019/1121 [00:18<00:01, 53.65it/s, loss=0.587, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 9:  91%|███▋| 1019/1121 [00:18<00:01, 53.64it/s, loss=0.365, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 10:  88%|████▍| 984/1121 [00:18<00:02, 53.19it/s, loss=0.35, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 11:  83%|███▎| 933/1121 [00:18<00:03, 51.64it/s, loss=0.249, v_num=91mb]
+
+
+
+
+
+
+
+
+
+
+Epoch 12:  93%|██▊| 1040/1121 [00:19<00:01, 53.27it/s, loss=0.196, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 13:  89%|███▌| 1000/1121 [00:18<00:02, 53.30it/s, loss=0.24, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 14:  88%|███▌| 992/1121 [00:18<00:02, 52.70it/s, loss=0.207, v_num=91mb]
+
+
+
+
+
+
+
+
+
+Epoch 15:  85%|███▍| 951/1121 [00:18<00:03, 52.33it/s, loss=0.206, v_num=91mb]
+
+
+
+
+
+
+
+
+
+
+Epoch 16:  96%|██▊| 1071/1121 [00:19<00:00, 54.14it/s, loss=0.101, v_num=91mb]
+
+
+
+
+
+Epoch 17:  41%|█▌  | 455/1121 [00:09<00:13, 49.96it/s, loss=0.114, v_num=91mb]
+/media/data/chitb/.local/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py:724: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...

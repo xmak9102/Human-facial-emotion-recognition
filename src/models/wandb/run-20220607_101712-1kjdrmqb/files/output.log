@@ -1,0 +1,71 @@
+
+Epoch 0:   2%|█▏                                                      | 24/1121 [00:00<00:32, 33.25it/s, loss=1.85, v_num=rmqb]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type        | Params
+--------------------------------------
+0 | model | SimpleModel | 783 K
+--------------------------------------
+783 K     Trainable params
+0         Non-trainable params
+783 K     Total params
+3.134     Total estimated model params size (MB)
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:495: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                not been set for this class (_ResultMetric). The property determines if `update` by
+                default needs access to the full metric state. If this is not the case, significant speedups can be
+                achieved and we recommend setting this to `False`.
+                We provide an checking function
+                `from torchmetrics.utilities import check_forward_no_full_state`
+                that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                default for now) or if `full_state_update=False` can be used safely.
+  warnings.warn(*args, **kwargs)
+/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:240: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  85%|██████████████████████████████████████████████▌        | 950/1121 [00:26<00:04, 35.59it/s, loss=1.66, v_num=rmqb]
+
+Validation DataLoader 0:  65%|█████████████████████████████████████████                      | 146/224 [00:03<00:01, 46.74it/s]
+Traceback (most recent call last):
+  File "/home/xps/educate/code/hust/ML/src/models/train.py", line 89, in <module>
+    trainer.fit(pl_module, train_dataloader, val_dataloader)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 770, in fit
+    self._call_and_handle_interrupt(
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 723, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 811, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1236, in _run
+    results = self._run_stage()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1323, in _run_stage
+    return self._run_train()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1353, in _run_train
+    self.fit_loop.run()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/base.py", line 205, in run
+    self.on_advance_end()
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py", line 297, in on_advance_end
+    self.trainer._call_callback_hooks("on_train_epoch_end")
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1636, in _call_callback_hooks
+    fn(self, self.lightning_module, *args, **kwargs)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/callbacks/early_stopping.py", line 179, in on_train_epoch_end
+    self._run_early_stopping_check(trainer)
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/callbacks/early_stopping.py", line 190, in _run_early_stopping_check
+    if trainer.fast_dev_run or not self._validate_condition_metric(  # disable early_stopping with fast_dev_run
+  File "/home/xps/anaconda3/envs/deeplearning/lib/python3.9/site-packages/pytorch_lightning/callbacks/early_stopping.py", line 145, in _validate_condition_metric
+    raise RuntimeError(error_msg)
+

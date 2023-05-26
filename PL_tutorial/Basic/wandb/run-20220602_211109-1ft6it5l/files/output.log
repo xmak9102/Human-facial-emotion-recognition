@@ -1,0 +1,84 @@
+data and label torch.Size([1, 28, 28]) 2
+Epoch 0:   7%|█▊                      | 137/1875 [00:01<00:17, 97.25it/s, loss=0.38, v_num=it5l]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type  | Params
+--------------------------------
+0 | model | Model | 7.9 K
+--------------------------------
+7.9 K     Trainable params
+0         Non-trainable params
+7.9 K     Total params
+
+
+
+
+
+
+Epoch 0:  84%|█████████████████▋   | 1581/1875 [00:15<00:02, 101.86it/s, loss=0.408, v_num=it5l]
+
+
+
+
+
+
+
+Epoch 1:  86%|██████████████████   | 1612/1875 [00:14<00:02, 113.92it/s, loss=0.389, v_num=it5l]
+
+
+
+
+
+
+
+
+Epoch 2:  87%|██████████████████▏  | 1629/1875 [00:16<00:02, 100.76it/s, loss=0.379, v_num=it5l]
+
+
+
+
+
+
+
+
+Epoch 3:  85%|█████████████████▉   | 1597/1875 [00:15<00:02, 100.69it/s, loss=0.373, v_num=it5l]
+
+
+
+
+
+
+
+
+
+Epoch 4:  86%|██████████████████▉   | 1619/1875 [00:17<00:02, 92.23it/s, loss=0.368, v_num=it5l]
+
+
+
+
+
+
+
+Epoch 5:  84%|█████████████████▋   | 1582/1875 [00:13<00:02, 113.02it/s, loss=0.365, v_num=it5l]
+
+
+
+
+
+
+
+
+Epoch 6:  87%|██████████████████▏  | 1627/1875 [00:15<00:02, 102.68it/s, loss=0.361, v_num=it5l]
+
+
+
+
+
+
+
+
+Epoch 7:  83%|██████████████████▎   | 1559/1875 [00:15<00:03, 98.20it/s, loss=0.359, v_num=it5l]
+
+
